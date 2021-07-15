@@ -2,7 +2,9 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 // import { useAuth0 } from "@auth0/auth0-react";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
-import Loading from "./components/Loading";
+import About from "./pages/About";
+import Schedule from "./pages/Schedule";
+// import Loading from "./components/Loading";
 
 function App() {
 	// const { user, isAuthenticated, isLoading } = useAuth0();
