@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+// import { useAuth0 } from "@auth0/auth0-react";
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import Loading from "./components/Loading";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	// const { user, isAuthenticated, isLoading } = useAuth0();
+
+	// if (isLoading) {
+	// 	return <Loading />;
+	// }
+
+	return (
+		<div>
+			<Router>
+				<NavBar />
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route exact path="/home" component={Home} />
+					<Route exact path="*" component={Home} />
+				</Switch>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
