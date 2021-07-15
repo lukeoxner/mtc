@@ -194,7 +194,7 @@ export default function PrimarySearchAppBar() {
 								fontFamily: "Zen Dots",
 							}}
 						>
-							BrewCrew
+							McPherson Track Center
 						</Typography>
 					</Link>
 					<div className={classes.grow} />
@@ -204,11 +204,11 @@ export default function PrimarySearchAppBar() {
 							alignItems: "center",
 						}}
 					>
-						<Link className={classes.navLink} to="/search">
-							Find Breweries
+						<Link className={classes.navLink} to="/about">
+							About
 						</Link>
-						<Link className={classes.navLink} to="/ourpicks">
-							Our Picks
+						<Link className={classes.navLink} to="/schedule">
+							Schedule
 						</Link>
 						{/* <Link className={classes.navLink} to="/">
 							About

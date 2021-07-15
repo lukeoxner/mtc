@@ -70,9 +70,9 @@ function Landing() {
 					}}
 				>
 					<Typography className={classes.hero}>
-						BrewCrew helps you find great local breweries!
+						Fulfill your need for speed with McPherson Track Center!
 					</Typography>
-					<Button variant="outlined" style={{ borderColor: "#f1a922" }}>
+					<Button variant="outlined" style={{ borderColor: "#e00000" }}>
 						<Link
 							className={classes.mobileMenuItem}
 							to="/search"
@@ -80,7 +80,7 @@ function Landing() {
 						>
 							<Typography
 								style={{
-									color: "#f1a922",
+									color: "#e00000",
 									textDecoration: "none",
 									fontSize: "1rem",
 									position: "relative",
@@ -88,7 +88,7 @@ function Landing() {
 									fontWeight: "500",
 								}}
 							>
-								Search Breweries
+								Learn More
 							</Typography>
 						</Link>
 					</Button>
