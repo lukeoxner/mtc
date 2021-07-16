@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, makeStyles, useTheme, Container } from "@material-ui/core";
-// import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from "react-router-dom";
 import Background from "../images/group-edit.jpg";
 import Typography from "@material-ui/core/Typography";
@@ -35,10 +34,9 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-function Landing() {
+function Home() {
 	const classes = useStyles();
 	const theme = useTheme();
-	// const { loginWithRedirect } = useAuth0();
 
 	return (
 		<>
@@ -98,4 +96,4 @@ function Landing() {
 	);
 }
 
-export default Landing;
+export default Home;
