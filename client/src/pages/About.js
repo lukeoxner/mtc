@@ -69,29 +69,7 @@ function Landing() {
 						overflow: "hidden",
 					}}
 				>
-					<Typography className={classes.hero}>
-						Fulfill your need for speed with McPherson Track Center!
-					</Typography>
-					<Button variant="outlined" style={{ borderColor: "#e00000" }}>
-						<Link
-							className={classes.mobileMenuItem}
-							to="/search"
-							style={{ textDecoration: "none" }}
-						>
-							<Typography
-								style={{
-									color: "#e00000",
-									textDecoration: "none",
-									fontSize: "1rem",
-									position: "relative",
-									fontStyle: "italic",
-									fontWeight: "500",
-								}}
-							>
-								Learn More
-							</Typography>
-						</Link>
-					</Button>
+					<Typography className={classes.hero}>About</Typography>
 				</Container>
 			</div>
 		</>
