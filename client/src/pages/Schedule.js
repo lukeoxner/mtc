@@ -3,6 +3,7 @@ import { Button, makeStyles, useTheme, Container } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import Background from "../images/group-edit.jpg";
 import Typography from "@material-ui/core/Typography";
+import MediaCard from "../components/MediaCard";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -57,9 +58,9 @@ function Schedule() {
 					className={classes.root}
 					style={{
 						position: "absolute",
-						bottom: "25%",
-						left: "7%",
-						width: "45%",
+						top: "25%",
+						left: "50%",
+						width: "50%",
 						maxHeight: "90",
 						marginTop: "2rem",
 						backgroundColor: `rgba(0,0,0,.0)`,
@@ -68,6 +69,7 @@ function Schedule() {
 					}}
 				>
 					<Typography className={classes.hero}>Schedule</Typography>
+					<MediaCard />
 				</Container>
 			</div>
 		</>
