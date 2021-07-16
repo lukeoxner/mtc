@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
 import { fade, makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -11,12 +10,9 @@ import Badge from "@material-ui/core/Badge";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import AccountCircle from "@material-ui/icons/AccountCircle";
-// import AccountThumbnail from "./AccountThumbnail";
 import MailIcon from "@material-ui/icons/Mail";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
-// import LoginButton from "./LoginButton";
-// import LogoutButton from "./LogoutButton";
 
 const useStyles = makeStyles((theme) => ({
 	grow: {
@@ -66,16 +62,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PrimarySearchAppBar() {
 	const classes = useStyles();
-	const { isAuthenticated } = useAuth0();
 	const [anchorEl, setAnchorEl] = React.useState(null);
 	const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
 	const isMenuOpen = Boolean(anchorEl);
 	const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-	const handleProfileMenuOpen = (event) => {
-		setAnchorEl(event.currentTarget);
-	};
 
 	const handleMobileMenuClose = () => {
 		setMobileMoreAnchorEl(null);
@@ -91,48 +82,6 @@ export default function PrimarySearchAppBar() {
 	};
 
 	const menuId = "primary-search-account-menu";
-	const renderAuthMenu = (
-		<Menu
-			anchorEl={anchorEl}
-			anchorOrigin={{ vertical: "top", horizontal: "right" }}
-			id={menuId}
-			keepMounted
-			transformOrigin={{ vertical: "top", horizontal: "right" }}
-			open={isMenuOpen}
-			onClose={handleMenuClose}
-		>
-			{/* <MenuItem onClick={handleMenuClose}>
-				<Link
-					to="/profile"
-					style={{
-						color: "#000000",
-						textDecoration: "none",
-						margin: "5px",
-					}}
-				>
-					Profile
-				</Link>
-			</MenuItem>
-			<MenuItem onClick={handleMenuClose}>
-				<LogoutButton />
-			</MenuItem> */}
-		</Menu>
-	);
-	const renderUnauthMenu = (
-		<Menu
-			anchorEl={anchorEl}
-			anchorOrigin={{ vertical: "top", horizontal: "right" }}
-			id={menuId}
-			keepMounted
-			transformOrigin={{ vertical: "top", horizontal: "right" }}
-			open={isMenuOpen}
-			onClose={handleMenuClose}
-		>
-			{/* <MenuItem onClick={handleMenuClose}>
-				<LoginButton />
-			</MenuItem> */}
-		</Menu>
-	);
 
 	const mobileMenuId = "primary-search-account-menu-mobile";
 	const renderMobileMenu = (
@@ -146,27 +95,15 @@ export default function PrimarySearchAppBar() {
 			onClose={handleMobileMenuClose}
 		>
 			<MenuItem onClick={handleMenuClose}>
-				<Link className={classes.mobileMenuItem} to="/search">
-					Find Breweries
+				<Link className={classes.mobileMenuItem} to="/schedule">
+					Schedule
 				</Link>
 			</MenuItem>
 			<MenuItem onClick={handleMenuClose}>
-				<Link className={classes.mobileMenuItem} to="/ourpicks">
-					Our Picks
+				<Link className={classes.mobileMenuItem} to="/about">
+					About
 				</Link>
 			</MenuItem>
-			{/* <MenuItem onClick={handleProfileMenuOpen}>
-				<IconButton
-					edge="end"
-					aria-label="account of current user"
-					aria-controls={menuId}
-					aria-haspopup="true"
-					onClick={handleProfileMenuOpen}
-					color="inherit"
-				>
-					<AccountThumbnail />
-				</IconButton>
-			</MenuItem> */}
 		</Menu>
 	);
 
@@ -210,19 +147,6 @@ export default function PrimarySearchAppBar() {
 						<Link className={classes.navLink} to="/schedule">
 							Schedule
 						</Link>
-						{/* <Link className={classes.navLink} to="/">
-							About
-						</Link> */}
-						{/* <IconButton
-							edge="end"
-							aria-label="account of current user"
-							aria-controls={menuId}
-							aria-haspopup="true"
-							onClick={handleProfileMenuOpen}
-							color="inherit"
-						>
-							<AccountThumbnail />
-						</IconButton> */}
 					</div>
 					<div className={classes.sectionMobile}>
 						<IconButton
@@ -238,7 +162,6 @@ export default function PrimarySearchAppBar() {
 				</Toolbar>
 			</AppBar>
 			{renderMobileMenu}
-			{isAuthenticated ? renderAuthMenu : renderUnauthMenu}
 		</div>
 	);
 }
