@@ -10,10 +10,13 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
 	root: {
-		maxWidth: 345,
+		maxWidth: 600,
+		justifyContent: "center",
 	},
 	media: {
-		height: 140,
+		height: 200,
+		width: 400,
+		margin: "auto",
 	},
 });
 
@@ -24,17 +27,17 @@ export default function MediaCard() {
 		<Card className={classes.root}>
 			<CardActionArea>
 				<CardMedia
+					component="img"
 					className={classes.media}
-					image="/static/images/cards/contemplative-reptile.jpg"
-					title="Contemplative Reptile"
+					image="https://www.hallettracing.net/wp-content/uploads/2021/05/logo.png"
+					title="Hallett"
 				/>
 				<CardContent>
 					<Typography gutterBottom variant="h5" component="h2">
-						Lizard
+						Hallett Motor Racing Circuit - Tulsa, OK
 					</Typography>
 					<Typography variant="body2" color="textSecondary" component="p">
-						Lizards are a widespread group of squamate reptiles, with over 6,000
-						species, ranging across all continents except Antarctica
+						Hallett Motor Racing Circuit is a track in Oklahoma.
 					</Typography>
 				</CardContent>
 			</CardActionArea>

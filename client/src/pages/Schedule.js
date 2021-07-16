@@ -1,5 +1,11 @@
 import React from "react";
-import { Button, makeStyles, useTheme, Container } from "@material-ui/core";
+import {
+	Button,
+	makeStyles,
+	useTheme,
+	Container,
+	Grid,
+} from "@material-ui/core";
 import { Link } from "react-router-dom";
 import Background from "../images/group-edit.jpg";
 import Typography from "@material-ui/core/Typography";
@@ -27,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: "2.3rem",
 		fontWeight: "600",
 		textShadow: "2px 2px #000000",
-		textAlign: "left",
+		textAlign: "center",
 		marginBottom: "30px",
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "2.0rem",
@@ -57,19 +63,34 @@ function Schedule() {
 				<Container
 					className={classes.root}
 					style={{
-						position: "absolute",
-						top: "25%",
-						left: "50%",
-						width: "50%",
+						// position: "absolute",
+						// top: "10%",
+						// left: "50%",
+						// width: "50%",
 						maxHeight: "90",
-						marginTop: "2rem",
+						marginTop: "7%",
 						backgroundColor: `rgba(0,0,0,.0)`,
 						color: "white",
 						overflow: "hidden",
 					}}
 				>
-					<Typography className={classes.hero}>Schedule</Typography>
-					<MediaCard />
+					<Typography className={classes.hero}>Upcoming Events</Typography>
+					<Grid container direction="row" justify="center" alignItems="center">
+						<Grid>
+							<MediaCard />
+
+							{/* <Details
+								id={result.id}
+								key={result.id}
+								name={result.name}
+								street={result.street}
+								city={result.city}
+								state={result.state}
+								website={result.website_url}
+								type={result.brewery_type}
+							/> */}
+						</Grid>
+					</Grid>
 				</Container>
 			</div>
 		</>
