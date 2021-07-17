@@ -14,8 +14,6 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: "center",
 	},
 	media: {
-		// height: 200,
-		// width: 400,
 		maxWidth: 400,
 		margin: "auto",
 		padding: "10px",

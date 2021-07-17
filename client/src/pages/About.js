@@ -1,9 +1,15 @@
 import React from "react";
-import { Button, makeStyles, useTheme, Container } from "@material-ui/core";
-// import { useAuth0 } from "@auth0/auth0-react";
+import {
+	Button,
+	makeStyles,
+	useTheme,
+	Container,
+	Grid,
+} from "@material-ui/core";
 import { Link } from "react-router-dom";
 import Background from "../images/group-edit.jpg";
 import Typography from "@material-ui/core/Typography";
+import MediaCard from "../components/MediaCard";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -27,25 +33,25 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: "2.3rem",
 		fontWeight: "600",
 		textShadow: "2px 2px #000000",
-		textAlign: "left",
-		marginBottom: "30px",
+		textAlign: "center",
+		marginTop: "40px",
+		marginBottom: "20px",
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "2.0rem",
 		},
 	},
 }));
 
-function Landing() {
+function About() {
 	const classes = useStyles();
 	const theme = useTheme();
-	// const { loginWithRedirect } = useAuth0();
 
 	return (
 		<>
 			<div
 				style={{
 					position: "relative",
-					backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0), rgba(000, 000, 000, 0.90)), url(${Background})`,
+					backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.80), rgba(000, 000, 000, 0.80)), url(${Background})`,
 					width: "100",
 					height: "100vh",
 					backgroundRepeat: "no-repeat",
@@ -58,22 +64,30 @@ function Landing() {
 				<Container
 					className={classes.root}
 					style={{
-						position: "absolute",
-						bottom: "25%",
-						left: "7%",
-						width: "45%",
+						// position: "absolute",
+						// top: "10%",
+						// left: "50%",
+						// width: "50%",
 						maxHeight: "90",
-						marginTop: "2rem",
+						marginTop: "7%",
 						backgroundColor: `rgba(0,0,0,.0)`,
 						color: "white",
 						overflow: "hidden",
 					}}
 				>
 					<Typography className={classes.hero}>About</Typography>
+					<Grid
+						container
+						direction="row"
+						justifyContent="center"
+						alignItems="center"
+					>
+						<Grid item sm={8} lg={6}></Grid>
+					</Grid>
 				</Container>
 			</div>
 		</>
 	);
 }
 
-export default Landing;
+export default About;

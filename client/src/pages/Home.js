@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		minWidth: 275,
 		position: "absolute",
-		top: "20%",
+		top: "30%",
 		left: "7%",
 		width: "45%",
 		maxHeight: "90",
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	textDiv: {
 		position: "relative",
-		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0), rgba(000, 000, 000, 0.30)), url(${Background})`,
+		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0), rgba(000, 000, 000, 0.40)), url(${Background})`,
 		width: "100",
 		height: "100vh",
 		backgroundRepeat: "no-repeat",
@@ -66,7 +66,7 @@ function Home() {
 						Fulfill your need for speed with McPherson Track Center!
 					</Typography>
 					<Button variant="outlined" className={classes.button}>
-						<Link className={classes.link} to="/search">
+						<Link className={classes.link} to="/about">
 							<Typography className={classes.linkText}>Learn More</Typography>
 						</Link>
 					</Button>
