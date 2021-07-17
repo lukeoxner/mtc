@@ -17,6 +17,8 @@ const useStyles = makeStyles({
 		height: 200,
 		width: 400,
 		margin: "20px",
+		padding: "20px",
+		objectFit: "fill",
 	},
 	cardArea: {
 		// padding: 20,

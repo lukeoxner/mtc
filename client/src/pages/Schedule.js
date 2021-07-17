@@ -75,7 +75,12 @@ function Schedule() {
 					}}
 				>
 					<Typography className={classes.hero}>Upcoming Events</Typography>
-					<Grid container direction="row" justify="center" alignItems="center">
+					<Grid
+						container
+						direction="row"
+						justifyContent="center"
+						alignItems="center"
+					>
 						<Grid>
 							<MediaCard />
 
