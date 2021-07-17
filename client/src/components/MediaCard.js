@@ -16,7 +16,13 @@ const useStyles = makeStyles({
 	media: {
 		height: 200,
 		width: 400,
-		margin: "auto",
+		margin: "20px",
+	},
+	cardArea: {
+		// padding: 20,
+	},
+	cardContent: {
+		// margin: 20,
 	},
 });
 
@@ -25,14 +31,14 @@ export default function MediaCard() {
 
 	return (
 		<Card className={classes.root}>
-			<CardActionArea>
+			<CardActionArea className={classes.cardArea}>
 				<CardMedia
 					component="img"
 					className={classes.media}
 					image="https://www.hallettracing.net/wp-content/uploads/2021/05/logo.png"
 					title="Hallett"
 				/>
-				<CardContent>
+				<CardContent className={classes.cardContent}>
 					<Typography gutterBottom variant="h5" component="h2">
 						Hallett Motor Racing Circuit - Tulsa, OK
 					</Typography>
