@@ -17,20 +17,6 @@ const useStyles = makeStyles((theme) => ({
 		color: "white",
 		overflow: "hidden",
 	},
-	bullet: {
-		display: "inline-block",
-		margin: "0 2px",
-		transform: "scale(0.8)",
-	},
-	title: {
-		fontSize: 14,
-	},
-	pos: {
-		marginBottom: 12,
-	},
-	indent: {
-		textIndent: "30px",
-	},
 	hero: {
 		fontSize: "2.3rem",
 		fontWeight: "600",
@@ -38,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: "left",
 		marginBottom: "30px",
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "2.0rem",
+			fontSize: "1.5rem",
 		},
 	},
 	textDiv: {
@@ -79,7 +65,7 @@ function Home() {
 					<Typography className={classes.hero}>
 						Fulfill your need for speed with McPherson Track Center!
 					</Typography>
-					<Button variant="outlined">
+					<Button variant="outlined" className={classes.button}>
 						<Link className={classes.link} to="/search">
 							<Typography className={classes.linkText}>Learn More</Typography>
 						</Link>
