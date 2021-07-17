@@ -16,11 +16,15 @@ const useStyles = makeStyles((theme) => ({
 	media: {
 		// height: 200,
 		// width: 400,
+		maxWidth: 400,
 		margin: "auto",
 		padding: "10px",
+		paddingTop: "20px",
+		paddingBottom: "20px",
 		objectFit: "fill",
 		[theme.breakpoints.down("sm")]: {
 			maxWidth: 250,
+			padding: "10px",
 		},
 	},
 	cardArea: {

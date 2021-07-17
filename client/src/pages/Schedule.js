@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
 		fontWeight: "600",
 		textShadow: "2px 2px #000000",
 		textAlign: "center",
-		marginBottom: "30px",
+		marginTop: "40px",
+		marginBottom: "20px",
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "2.0rem",
 		},
