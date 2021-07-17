@@ -58,6 +58,12 @@ const useStyles = makeStyles((theme) => ({
 		textDecoration: "none",
 		color: "#000000",
 	},
+	title: {
+		fontFamily: "Zen Dots",
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "1.0rem",
+		},
+	},
 }));
 
 export default function PrimarySearchAppBar() {
@@ -123,14 +129,7 @@ export default function PrimarySearchAppBar() {
 							textDecoration: "none",
 						}}
 					>
-						<Typography
-							className={classes.title}
-							variant="h5"
-							noWrap
-							style={{
-								fontFamily: "Zen Dots",
-							}}
-						>
+						<Typography className={classes.title} variant="h5" noWrap>
 							McPherson Track Center
 						</Typography>
 					</Link>
