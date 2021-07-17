@@ -1,12 +1,21 @@
 import React from "react";
 import { Button, makeStyles, useTheme, Container } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import Background from "../images/group-edit.jpg";
+import Background from "../images/gt4-background.jpg";
 import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		minWidth: 275,
+		position: "absolute",
+		top: "20%",
+		left: "7%",
+		width: "45%",
+		maxHeight: "90",
+		marginTop: "2rem",
+		backgroundColor: `rgba(0,0,0,.0)`,
+		color: "white",
+		overflow: "hidden",
 	},
 	bullet: {
 		display: "inline-block",
@@ -32,6 +41,31 @@ const useStyles = makeStyles((theme) => ({
 			fontSize: "2.0rem",
 		},
 	},
+	textDiv: {
+		position: "relative",
+		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0), rgba(000, 000, 000, 0.30)), url(${Background})`,
+		width: "100",
+		height: "100vh",
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "cover",
+		backgroundPosition: "center center",
+		backgroundAttachment: "fixed",
+		overflow: "hidden",
+	},
+	button: {
+		borderColor: "#e00000",
+	},
+	link: {
+		textDecoration: "none",
+	},
+	linkText: {
+		color: "#e00000",
+		textDecoration: "none",
+		fontSize: "1rem",
+		position: "relative",
+		fontStyle: "italic",
+		fontWeight: "500",
+	},
 }));
 
 function Home() {
@@ -40,54 +74,14 @@ function Home() {
 
 	return (
 		<>
-			<div
-				style={{
-					position: "relative",
-					backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0), rgba(000, 000, 000, 0.90)), url(${Background})`,
-					width: "100",
-					height: "100vh",
-					backgroundRepeat: "no-repeat",
-					backgroundSize: "cover",
-					backgroundPosition: "center center",
-					backgroundAttachment: "fixed",
-					overflow: "hidden",
-				}}
-			>
-				<Container
-					className={classes.root}
-					style={{
-						position: "absolute",
-						bottom: "25%",
-						left: "7%",
-						width: "45%",
-						maxHeight: "90",
-						marginTop: "2rem",
-						backgroundColor: `rgba(0,0,0,.0)`,
-						color: "white",
-						overflow: "hidden",
-					}}
-				>
+			<div className={classes.textDiv}>
+				<Container className={classes.root}>
 					<Typography className={classes.hero}>
 						Fulfill your need for speed with McPherson Track Center!
 					</Typography>
-					<Button variant="outlined" style={{ borderColor: "#e00000" }}>
-						<Link
-							className={classes.mobileMenuItem}
-							to="/search"
-							style={{ textDecoration: "none" }}
-						>
-							<Typography
-								style={{
-									color: "#e00000",
-									textDecoration: "none",
-									fontSize: "1rem",
-									position: "relative",
-									fontStyle: "italic",
-									fontWeight: "500",
-								}}
-							>
-								Learn More
-							</Typography>
+					<Button variant="outlined">
+						<Link className={classes.link} to="/search">
+							<Typography className={classes.linkText}>Learn More</Typography>
 						</Link>
 					</Button>
 				</Container>
