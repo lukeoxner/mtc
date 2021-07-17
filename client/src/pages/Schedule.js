@@ -81,7 +81,7 @@ function Schedule() {
 						justifyContent="center"
 						alignItems="center"
 					>
-						<Grid>
+						<Grid item sm={8} lg={6}>
 							<MediaCard />
 
 							{/* <Details

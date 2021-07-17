@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -8,17 +8,20 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
 	root: {
 		maxWidth: 600,
 		justifyContent: "center",
 	},
 	media: {
-		height: 200,
-		width: 400,
-		margin: "20px",
-		padding: "20px",
+		// height: 200,
+		// width: 400,
+		margin: "auto",
+		padding: "10px",
 		objectFit: "fill",
+		[theme.breakpoints.down("sm")]: {
+			maxWidth: 250,
+		},
 	},
 	cardArea: {
 		// padding: 20,
@@ -26,10 +29,11 @@ const useStyles = makeStyles({
 	cardContent: {
 		// margin: 20,
 	},
-});
+}));
 
 export default function MediaCard() {
 	const classes = useStyles();
+	const theme = useTheme();
 
 	return (
 		<Card className={classes.root}>
