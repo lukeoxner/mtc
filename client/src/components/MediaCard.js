@@ -10,11 +10,12 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		maxWidth: 600,
+		maxWidth: 500,
 		justifyContent: "center",
+		margin: "auto",
 	},
 	media: {
-		maxWidth: 400,
+		maxWidth: 300,
 		margin: "auto",
 		padding: "10px",
 		paddingTop: "20px",
