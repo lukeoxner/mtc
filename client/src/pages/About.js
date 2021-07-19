@@ -28,26 +28,12 @@ const useStyles = makeStyles((theme) => ({
 		maxHeight: "90",
 		marginTop: "7%",
 		backgroundColor: `rgba(0,0,0,.0)`,
-		color: "white",
 		overflow: "hidden",
-	},
-	bullet: {
-		display: "inline-block",
-		margin: "0 2px",
-		transform: "scale(0.8)",
-	},
-	title: {
-		fontSize: 14,
-	},
-	pos: {
-		marginBottom: 12,
-	},
-	indent: {
-		textIndent: "30px",
 	},
 	hero: {
 		fontSize: "2.3rem",
 		fontWeight: "600",
+		color: "white",
 		textShadow: "2px 2px #000000",
 		textAlign: "center",
 		marginTop: "40px",
@@ -55,6 +41,12 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "2.0rem",
 		},
+	},
+	gridSection: {
+		backgroundColor: "#ffffff",
+		padding: "20px",
+		// justifyContent: "center",
+		// alignItems: "center",
 	},
 }));
 
@@ -73,7 +65,13 @@ function About() {
 						justifyContent="center"
 						alignItems="center"
 					>
-						<Grid item sm={8} lg={6}></Grid>
+						<Grid className={classes.gridSection} item sm={10} lg={10}>
+							<h2>
+								McPherson Track Center offers you the chance to enjoy your high
+								performance car in a safe, controlled environment on the race
+								track.
+							</h2>
+						</Grid>
 					</Grid>
 				</Container>
 			</div>
