@@ -49,7 +49,7 @@ export default function MediaCard() {
 				/>
 				<CardContent className={classes.cardContent}>
 					<Typography gutterBottom variant="h5" component="h2">
-						Hallett Motor Racing Circuit - Tulsa, OK
+						September 13 - Hallett
 					</Typography>
 					<Typography variant="body2" color="textSecondary" component="p">
 						Hallett Motor Racing Circuit is a track in Oklahoma.
