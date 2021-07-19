@@ -31,6 +31,21 @@ const useStyles = makeStyles((theme) => ({
 	},
 	cardContent: {
 		// margin: 20,
+		textAlign: "center",
+	},
+	date: {
+		fontSize: "2rem",
+		fontWeight: "600",
+	},
+	trackName: {
+		fontSize: "1.5rem",
+		fontWeight: "400",
+	},
+	cardActions: {
+		justifyContent: "center",
+	},
+	button: {
+		marginBottom: "20px",
 	},
 }));
 
@@ -48,19 +63,21 @@ export default function MediaCard() {
 					title="Hallett"
 				/>
 				<CardContent className={classes.cardContent}>
-					<Typography gutterBottom variant="h5" component="h2">
-						September 13 - Hallett
+					<Typography gutterBottom className={classes.date}>
+						September 13, 2021
 					</Typography>
-					<Typography variant="body2" color="textSecondary" component="p">
-						Hallett Motor Racing Circuit is a track in Oklahoma.
+					<Typography gutterBottom className={classes.trackName}>
+						Hallett Motor Racing Circuit - Tulsa, OK
 					</Typography>
 				</CardContent>
 			</CardActionArea>
-			<CardActions>
-				<Button size="small" color="primary">
-					Share
-				</Button>
-				<Button size="small" color="primary">
+			<CardActions className={classes.cardActions}>
+				<Button
+					className={classes.button}
+					size="medium"
+					variant="outlined"
+					color="primary"
+				>
 					Learn More
 				</Button>
 			</CardActions>
