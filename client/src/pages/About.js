@@ -12,8 +12,24 @@ import Typography from "@material-ui/core/Typography";
 import MediaCard from "../components/MediaCard";
 
 const useStyles = makeStyles((theme) => ({
+	mainDiv: {
+		position: "relative",
+		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.80), rgba(000, 000, 000, 0.80)), url(${Background})`,
+		width: "100",
+		height: "100vh",
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "cover",
+		backgroundPosition: "center center",
+		backgroundAttachment: "fixed",
+		overflow: "hidden",
+	},
 	root: {
 		minWidth: 275,
+		maxHeight: "90",
+		marginTop: "7%",
+		backgroundColor: `rgba(0,0,0,.0)`,
+		color: "white",
+		overflow: "hidden",
 	},
 	bullet: {
 		display: "inline-block",
@@ -48,33 +64,8 @@ function About() {
 
 	return (
 		<>
-			<div
-				style={{
-					position: "relative",
-					backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.80), rgba(000, 000, 000, 0.80)), url(${Background})`,
-					width: "100",
-					height: "100vh",
-					backgroundRepeat: "no-repeat",
-					backgroundSize: "cover",
-					backgroundPosition: "center center",
-					backgroundAttachment: "fixed",
-					overflow: "hidden",
-				}}
-			>
-				<Container
-					className={classes.root}
-					style={{
-						// position: "absolute",
-						// top: "10%",
-						// left: "50%",
-						// width: "50%",
-						maxHeight: "90",
-						marginTop: "7%",
-						backgroundColor: `rgba(0,0,0,.0)`,
-						color: "white",
-						overflow: "hidden",
-					}}
-				>
+			<div className={classes.mainDiv}>
+				<Container className={classes.root}>
 					<Typography className={classes.hero}>About</Typography>
 					<Grid
 						container
