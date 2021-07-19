@@ -26,16 +26,13 @@ const useStyles = makeStyles((theme) => ({
 			padding: "10px",
 		},
 	},
-	cardArea: {
-		// padding: 20,
-	},
 	cardContent: {
 		// margin: 20,
 		textAlign: "center",
 	},
 	date: {
 		fontSize: "2rem",
-		fontWeight: "600",
+		fontWeight: "500",
 	},
 	trackName: {
 		fontSize: "1.5rem",
@@ -55,22 +52,21 @@ export default function MediaCard() {
 
 	return (
 		<Card className={classes.root}>
-			<CardActionArea className={classes.cardArea}>
-				<CardMedia
-					component="img"
-					className={classes.media}
-					image="https://www.hallettracing.net/wp-content/uploads/2021/05/logo.png"
-					title="Hallett"
-				/>
-				<CardContent className={classes.cardContent}>
-					<Typography gutterBottom className={classes.date}>
-						September 13, 2021
-					</Typography>
-					<Typography gutterBottom className={classes.trackName}>
-						Hallett Motor Racing Circuit - Tulsa, OK
-					</Typography>
-				</CardContent>
-			</CardActionArea>
+			<CardMedia
+				component="img"
+				className={classes.media}
+				image="https://www.hallettracing.net/wp-content/uploads/2021/05/logo.png"
+				title="Hallett"
+			/>
+			<CardContent className={classes.cardContent}>
+				<Typography gutterBottom className={classes.date}>
+					September 13, 2021
+				</Typography>
+				<Typography gutterBottom className={classes.trackName}>
+					Hallett Motor Racing Circuit - Tulsa, OK
+				</Typography>
+			</CardContent>
+
 			<CardActions className={classes.cardActions}>
 				<Button
 					className={classes.button}

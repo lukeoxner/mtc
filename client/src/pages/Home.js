@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
 	hero: {
 		fontSize: "2.3rem",
 		fontWeight: "600",
+		fontStyle: "italic",
 		textShadow: "2px 2px #000000",
 		textAlign: "left",
 		marginBottom: "30px",
@@ -63,7 +64,7 @@ function Home() {
 			<div className={classes.textDiv}>
 				<Container className={classes.root}>
 					<Typography className={classes.hero}>
-						Fulfill your need for speed with McPherson Track Center!
+						Satisfy your need for speed with McPherson Track Center!
 					</Typography>
 					<Button variant="outlined" className={classes.button}>
 						<Link className={classes.link} to="/about">
