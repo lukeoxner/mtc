@@ -43,6 +43,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 	button: {
 		marginBottom: "20px",
+		color: "#e00000",
+		borderColor: "#e00000",
 	},
 }));
 
@@ -68,12 +70,7 @@ export default function MediaCard() {
 			</CardContent>
 
 			<CardActions className={classes.cardActions}>
-				<Button
-					className={classes.button}
-					size="medium"
-					variant="outlined"
-					color="primary"
-				>
+				<Button className={classes.button} size="medium" variant="outlined">
 					Learn More
 				</Button>
 			</CardActions>
