@@ -43,7 +43,6 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	gridSection: {
-		backgroundColor: "#ffffff",
 		padding: "20px",
 		// justifyContent: "center",
 		// alignItems: "center",
@@ -58,7 +57,7 @@ function About() {
 		<>
 			<div className={classes.mainDiv}>
 				<Container className={classes.root}>
-					<Typography className={classes.hero}>About</Typography>
+					<Typography className={classes.hero}>About Us</Typography>
 					<Grid
 						container
 						direction="row"

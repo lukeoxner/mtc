@@ -64,6 +64,9 @@ const useStyles = makeStyles((theme) => ({
 			fontSize: "1.0rem",
 		},
 	},
+	mcPherson: {
+		color: "#e00000",
+	},
 }));
 
 export default function PrimarySearchAppBar() {
@@ -130,7 +133,7 @@ export default function PrimarySearchAppBar() {
 						}}
 					>
 						<Typography className={classes.title} variant="h5" noWrap>
-							McPherson Track Center
+							<span className={classes.mcPherson}>McPherson</span> Track Center
 						</Typography>
 					</Link>
 					<div className={classes.grow} />
