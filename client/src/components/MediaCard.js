@@ -6,6 +6,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
@@ -46,6 +47,10 @@ const useStyles = makeStyles((theme) => ({
 		color: "#e00000",
 		borderColor: "#e00000",
 	},
+	link: {
+		textDecoration: "none",
+		color: "#e00000",
+	},
 }));
 
 export default function MediaCard() {
@@ -71,7 +76,9 @@ export default function MediaCard() {
 
 			<CardActions className={classes.cardActions}>
 				<Button className={classes.button} size="medium" variant="outlined">
-					Learn More
+					<Link className={classes.link} to="/event">
+						Learn More
+					</Link>
 				</Button>
 			</CardActions>
 		</Card>
