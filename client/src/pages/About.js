@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	gridSection: {
 		padding: "20px",
+		color: "#fff",
 		// justifyContent: "center",
 		// alignItems: "center",
 	},
@@ -70,6 +71,11 @@ function About() {
 								performance car in a safe, controlled environment on the race
 								track.
 							</h2>
+							<br />
+							<h4>
+								Whether you want to learn how to drive at the limit, or just do
+								some heckin zoomies, we've got you covered.
+							</h4>
 						</Grid>
 					</Grid>
 				</Container>
