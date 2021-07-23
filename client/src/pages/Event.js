@@ -53,9 +53,6 @@ function Event() {
 		<>
 			<div className={classes.mainDiv}>
 				<Container className={classes.root}>
-					<Typography className={classes.hero}>
-						Hallett Motor Racing Circuit - September 13, 2021
-					</Typography>
 					<Grid
 						container
 						direction="row"

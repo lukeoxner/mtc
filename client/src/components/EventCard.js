@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		maxWidth: 500,
+		maxWidth: 800,
 		justifyContent: "center",
 		margin: "auto",
 	},
@@ -71,6 +71,10 @@ export default function MediaCard() {
 				</Typography>
 				<Typography gutterBottom className={classes.trackName}>
 					Hallett Motor Racing Circuit - Tulsa, OK
+				</Typography>
+				<Typography gutterBottom className={classes.trackName}>
+					Come join us for another fun track day at Hallett! Spots are limited,
+					so be sure to sign up soon to guarantee your spot!
 				</Typography>
 			</CardContent>
 
