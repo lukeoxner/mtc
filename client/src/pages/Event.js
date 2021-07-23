@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import Background from "../images/group-edit.jpg";
 import Typography from "@material-ui/core/Typography";
 import MediaCard from "../components/MediaCard";
+import EventCard from "../components/EventCard";
 
 const useStyles = makeStyles((theme) => ({
 	mainDiv: {
@@ -44,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-function Schedule() {
+function Event() {
 	const classes = useStyles();
 	const theme = useTheme();
 
@@ -61,19 +62,8 @@ function Schedule() {
 						justifyContent="center"
 						alignItems="center"
 					>
-						<Grid item sm={8} lg={6}>
-							<MediaCard />
-
-							{/* <Details
-								id={result.id}
-								key={result.id}
-								name={result.name}
-								street={result.street}
-								city={result.city}
-								state={result.state}
-								website={result.website_url}
-								type={result.brewery_type}
-							/> */}
+						<Grid item sm={10} lg={8}>
+							<EventCard />
 						</Grid>
 					</Grid>
 				</Container>
@@ -82,4 +72,4 @@ function Schedule() {
 	);
 }
 
-export default Schedule;
+export default Event;
