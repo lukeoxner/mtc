@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
 		maxWidth: 800,
 		justifyContent: "center",
 		margin: "auto",
+		[theme.breakpoints.down("sm")]: {
+			marginTop: "40px",
+		},
 	},
 	media: {
 		maxWidth: 300,
@@ -65,7 +68,7 @@ export default function MediaCard() {
 
 	return (
 		<Card className={classes.root}>
-			<Grid container direction="row">
+			<Grid container direction="row" justifyContent="center">
 				<Grid item sm={4} lg={6}>
 					<CardMedia
 						component="img"
