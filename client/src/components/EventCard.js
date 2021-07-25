@@ -5,6 +5,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	cardContent: {
-		// margin: 20,
+		marginTop: 20,
 		textAlign: "center",
 	},
 	date: {
@@ -38,6 +39,11 @@ const useStyles = makeStyles((theme) => ({
 	trackName: {
 		fontSize: "1.5rem",
 		fontWeight: "400",
+	},
+	eventInfo: {
+		fontSize: "1.2rem",
+		fontWeight: "300",
+		margin: 20,
 	},
 	cardActions: {
 		justifyContent: "center",
@@ -59,24 +65,31 @@ export default function MediaCard() {
 
 	return (
 		<Card className={classes.root}>
-			<CardMedia
-				component="img"
-				className={classes.media}
-				image="https://www.hallettracing.net/wp-content/uploads/2021/05/logo.png"
-				title="Hallett"
-			/>
-			<CardContent className={classes.cardContent}>
-				<Typography gutterBottom className={classes.date}>
-					September 13, 2021
-				</Typography>
-				<Typography gutterBottom className={classes.trackName}>
-					Hallett Motor Racing Circuit - Tulsa, OK
-				</Typography>
-				<Typography gutterBottom className={classes.trackName}>
-					Come join us for another fun track day at Hallett! Spots are limited,
+			<Grid container direction="row">
+				<Grid item sm={4} lg={6}>
+					<CardMedia
+						component="img"
+						className={classes.media}
+						image="https://www.hallettracing.net/wp-content/uploads/2021/05/logo.png"
+						title="Hallett"
+					/>
+				</Grid>
+				<Grid className={classes.cardContent} item sm={4} lg={6}>
+					<Typography gutterBottom className={classes.date}>
+						September 13, 2021
+					</Typography>
+					<Typography gutterBottom className={classes.trackName}>
+						Hallett Motor Racing Circuit
+					</Typography>
+					<Typography gutterBottom className={classes.trackName}>
+						Tulsa, OK
+					</Typography>
+				</Grid>
+				<Typography gutterBottom className={classes.eventInfo}>
+					Come join us for another fun track day at Hallett! Space is limited,
 					so be sure to sign up soon to guarantee your spot!
 				</Typography>
-			</CardContent>
+			</Grid>
 
 			<CardActions className={classes.cardActions}>
 				<Button className={classes.button} size="medium" variant="outlined">
