@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	root: {
 		minWidth: 275,
-		maxHeight: "90",
+		maxHeight: "100",
 		marginTop: "7%",
 		backgroundColor: `rgba(0,0,0,.0)`,
 		color: "white",

@@ -15,8 +15,10 @@ const useStyles = makeStyles((theme) => ({
 		maxWidth: 800,
 		justifyContent: "center",
 		margin: "auto",
+		// marginBottom: 20,
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "40px",
+			marginBottom: "30px",
 		},
 	},
 	media: {
@@ -42,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
 	trackName: {
 		fontSize: "1.5rem",
 		fontWeight: "400",
+		textAlign: "center",
 	},
 	eventInfo: {
 		fontSize: "1.2rem",
@@ -95,6 +98,34 @@ export default function MediaCard() {
 					in. Space is limited as usual, so be sure to contact us soon to sign
 					up and guarantee your spot!
 				</Typography>
+				<br />
+				<Grid item sm={10}>
+					<Typography className={classes.trackName} style={{ fontWeight: 500 }}>
+						Event Details
+					</Typography>
+				</Grid>
+				<Grid item sm={10}>
+					<Typography className={classes.eventInfo} style={{ marginTop: 15 }}>
+						<span style={{ fontWeight: 400 }}>Format:</span> 5 run groups / 5
+						cars per run group / 20min sessions
+					</Typography>
+				</Grid>
+				<Grid item sm={10}>
+					<Typography className={classes.eventInfo} style={{ marginTop: 0 }}>
+						<span style={{ fontWeight: 400 }}>Cost:</span> $xxx per driver
+					</Typography>
+				</Grid>
+				<Grid item sm={10}>
+					<Typography className={classes.eventInfo} style={{ marginTop: 0 }}>
+						<span style={{ fontWeight: 400 }}>Lodging:</span>{" "}
+						<a
+							href="https://www.ihg.com/holidayinnexpress/hotels/us/en/sand-springs/tulrp/hoteldetail"
+							target="blank"
+						>
+							Holiday Inn Express in Sand Springs
+						</a>
+					</Typography>
+				</Grid>
 			</Grid>
 
 			<CardActions className={classes.cardActions}>
