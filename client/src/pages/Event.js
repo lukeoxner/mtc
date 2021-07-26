@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 		backgroundSize: "cover",
 		backgroundPosition: "center center",
 		backgroundAttachment: "fixed",
-		overflow: "hidden",
+		// overflow: "hidden",
 	},
 	root: {
 		minWidth: 275,

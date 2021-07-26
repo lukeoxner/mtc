@@ -95,8 +95,10 @@ export default function MediaCard() {
 					Come join us for another fun track day at Hallett! September track
 					days often produce some of the best driving conditions and fastest lap
 					times, as the weather is cooling off and the track is more rubbered
-					in. Space is limited as usual, so be sure to contact us soon to sign
-					up and guarantee your spot!
+					in. Our track events feature nearly two hours of track time for each
+					participant, complimentary catered lunch, and free use of Hallett's
+					covered RacePort paddock areas. Space is limited as usual, so be sure
+					to contact us soon to sign up and guarantee your spot!
 				</Typography>
 				<br />
 				<Grid item sm={10}>
@@ -123,6 +125,22 @@ export default function MediaCard() {
 							target="blank"
 						>
 							Holiday Inn Express in Sand Springs
+						</a>
+					</Typography>
+				</Grid>
+				<Grid item sm={10}>
+					<Typography className={classes.eventInfo} style={{ marginTop: 0 }}>
+						<span style={{ fontWeight: 400 }}>Track Info:</span>{" "}
+						<a href="https://www.hallettracing.net/" target="blank">
+							Hallett Motor Racing Circuit
+						</a>
+					</Typography>
+				</Grid>
+				<Grid item sm={10}>
+					<Typography className={classes.eventInfo} style={{ marginTop: 0 }}>
+						<span style={{ fontWeight: 400 }}>Track Video Lap:</span>{" "}
+						<a href="https://youtu.be/Ir0MgKkjWAY" target="blank">
+							Porsche Cayman GT4 at Hallett
 						</a>
 					</Typography>
 				</Grid>
