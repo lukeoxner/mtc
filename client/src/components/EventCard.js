@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
 	eventInfo: {
 		fontSize: "1.2rem",
 		fontWeight: "300",
-		margin: 20,
+		margin: 30,
 	},
 	cardActions: {
 		justifyContent: "center",
@@ -88,9 +88,12 @@ export default function MediaCard() {
 						Tulsa, OK
 					</Typography>
 				</Grid>
-				<Typography gutterBottom className={classes.eventInfo}>
-					Come join us for another fun track day at Hallett! Space is limited,
-					so be sure to sign up soon to guarantee your spot!
+				<Typography className={classes.eventInfo}>
+					Come join us for another fun track day at Hallett! September track
+					days often produce some of the best driving conditions and fastest lap
+					times, as the weather is cooling off and the track is more rubbered
+					in. Space is limited as usual, so be sure to contact us soon to sign
+					up and guarantee your spot!
 				</Typography>
 			</Grid>
 
