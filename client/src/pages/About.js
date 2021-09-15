@@ -74,7 +74,7 @@ function About() {
 							<br />
 							<h4>
 								Whether you're brand new to high performance driving, or a
-								seasoned track day veteran, you'll have a blast our events.
+								seasoned track day veteran - you'll have a blast our events.
 							</h4>
 						</Grid>
 					</Grid>
