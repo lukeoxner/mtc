@@ -73,8 +73,8 @@ function About() {
 							</h2>
 							<br />
 							<h4>
-								Whether you want to learn how to drive at the limit, or just do
-								some heckin zoomies, we've got you covered.
+								Whether you're brand new to high performance driving, or a
+								seasoned track day veteran, you'll have a blast our events.
 							</h4>
 						</Grid>
 					</Grid>
