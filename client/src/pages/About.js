@@ -14,7 +14,7 @@ import MediaCard from "../components/MediaCard";
 const useStyles = makeStyles((theme) => ({
 	mainDiv: {
 		position: "relative",
-		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.80), rgba(000, 000, 000, 0.80)), url(${Background})`,
+		backgroundColor: "#fff",
 		width: "100",
 		height: "100vh",
 		backgroundRepeat: "no-repeat",
@@ -33,8 +33,7 @@ const useStyles = makeStyles((theme) => ({
 	hero: {
 		fontSize: "2.3rem",
 		fontWeight: "600",
-		color: "white",
-		textShadow: "2px 2px #000000",
+		color: "black",
 		textAlign: "center",
 		marginTop: "40px",
 		marginBottom: "20px",
@@ -44,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	gridSection: {
 		padding: "20px",
-		color: "#fff",
+		color: "#000",
 		// justifyContent: "center",
 		// alignItems: "center",
 	},
