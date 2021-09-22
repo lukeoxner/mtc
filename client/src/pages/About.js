@@ -7,7 +7,7 @@ import {
 	Grid,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import Background from "../images/group-edit.jpg";
+import Background from "../images/two-cars-back.jpg";
 import Typography from "@material-ui/core/Typography";
 import MediaCard from "../components/MediaCard";
 
@@ -31,19 +31,28 @@ const useStyles = makeStyles((theme) => ({
 		overflow: "hidden",
 	},
 	hero: {
-		fontSize: "2.3rem",
-		fontWeight: "600",
-		color: "black",
-		textAlign: "center",
 		marginTop: "40px",
 		marginBottom: "20px",
+		// paddingTop: "50px",
+		height: "400px",
+		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.6), rgba(000, 000, 000, 0.80)), url(${Background})`,
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "cover",
+		backgroundPosition: "center center",
+		backgroundAttachment: "fixed",
+	},
+	heroText: {
+		fontSize: "2.3rem",
+		fontWeight: "600",
+		color: "#fff",
+		textAlign: "center",
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "2.0rem",
 		},
 	},
 	gridSection: {
 		padding: "20px",
-		color: "#000",
+		color: "#444",
 		// justifyContent: "center",
 		// alignItems: "center",
 	},
@@ -57,7 +66,9 @@ function About() {
 		<>
 			<div className={classes.mainDiv}>
 				<Container className={classes.root}>
-					<Typography className={classes.hero}>About Us</Typography>
+					<div className={classes.hero}>
+						<Typography className={classes.heroText}>About Us</Typography>
+					</div>
 					<Grid
 						container
 						direction="row"
