@@ -123,7 +123,7 @@ export default function PrimarySearchAppBar() {
 	return (
 		<div className={(classes.grow, classes.toolbar)}>
 			<AppBar
-				position="sticky"
+				position="fixed"
 				style={{
 					backgroundColor: "#000000",
 				}}
