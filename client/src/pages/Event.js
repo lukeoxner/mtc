@@ -15,7 +15,6 @@ import EventCard from "../components/EventCard";
 const useStyles = makeStyles((theme) => ({
 	mainDiv: {
 		position: "relative",
-		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.8), rgba(000, 000, 000, 0.80)), url(${Background})`,
 		width: "100",
 		height: "100vh",
 		backgroundRepeat: "no-repeat",

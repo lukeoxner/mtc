@@ -52,7 +52,11 @@ const useStyles = makeStyles((theme) => ({
 		marginRight: "2rem",
 		fontWeight: "500",
 		fontSize: "1.2rem",
+		"&:hover": {
+			color: "#e00",
+		},
 	},
+
 	mobileMenuItem: {
 		margin: "5px",
 		textDecoration: "none",
