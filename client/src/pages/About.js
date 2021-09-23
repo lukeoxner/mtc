@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
 		marginBottom: "20px",
 		// paddingTop: "50px",
 		height: "400px",
+		width: "100",
 		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.6), rgba(000, 000, 000, 0.80)), url(${Background})`,
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
@@ -64,11 +65,11 @@ function About() {
 
 	return (
 		<>
+			<div className={classes.hero}>
+				<Typography className={classes.heroText}>About Us</Typography>
+			</div>
 			<div className={classes.mainDiv}>
 				<Container className={classes.root}>
-					<div className={classes.hero}>
-						<Typography className={classes.heroText}>About Us</Typography>
-					</div>
 					<Grid
 						container
 						direction="row"
