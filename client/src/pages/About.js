@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "2.0rem",
 		},
-		paddingTop: "50px",
+		paddingTop: "70px",
 	},
 	gridSection: {
 		padding: "20px",
