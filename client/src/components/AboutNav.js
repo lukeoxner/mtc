@@ -8,6 +8,9 @@ import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 import InboxIcon from "@mui/icons-material/Inbox";
 import DraftsIcon from "@mui/icons-material/Drafts";
+import InfoIcon from "@mui/icons-material/Info";
+import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
+import MapIcon from "@mui/icons-material/Map";
 
 export default function BasicList() {
 	return (
@@ -17,32 +20,17 @@ export default function BasicList() {
 					<ListItem disablePadding>
 						<ListItemButton>
 							<ListItemIcon>
-								<InboxIcon />
+								<HistoryEduIcon />
 							</ListItemIcon>
-							<ListItemText primary="Inbox" />
+							<ListItemText primary="Introduction" />
 						</ListItemButton>
 					</ListItem>
 					<ListItem disablePadding>
 						<ListItemButton>
 							<ListItemIcon>
-								<DraftsIcon />
+								<MapIcon />
 							</ListItemIcon>
-							<ListItemText primary="Drafts" />
-						</ListItemButton>
-					</ListItem>
-				</List>
-			</nav>
-			<Divider />
-			<nav aria-label="secondary mailbox folders">
-				<List>
-					<ListItem disablePadding>
-						<ListItemButton>
-							<ListItemText primary="Trash" />
-						</ListItemButton>
-					</ListItem>
-					<ListItem disablePadding>
-						<ListItemButton component="a" href="#simple-list">
-							<ListItemText primary="Spam" />
+							<ListItemText primary="Track Map" />
 						</ListItemButton>
 					</ListItem>
 				</List>
