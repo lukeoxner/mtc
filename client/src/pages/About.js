@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	root: {
 		minWidth: 275,
-		maxHeight: "90",
+		// maxHeight: "90",
 		marginTop: "7%",
 		backgroundColor: `rgba(0,0,0,.0)`,
 		overflow: "hidden",
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
 		paddingTop: "70px",
 	},
 	gridSection: {
-		padding: "20px",
+		// padding: "20px",
 		color: "#444",
 		// justifyContent: "center",
 		// alignItems: "center",
@@ -76,7 +76,7 @@ function About() {
 						container
 						direction="row"
 						justifyContent="center"
-						alignItems="center"
+						// alignItems="center"
 					>
 						<Grid className={classes.gridSection} item sm={10} lg={3}>
 							<AboutNav />
