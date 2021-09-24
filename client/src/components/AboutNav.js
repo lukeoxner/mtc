@@ -6,12 +6,15 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
+// Icons
 import InboxIcon from "@mui/icons-material/Inbox";
 import DraftsIcon from "@mui/icons-material/Drafts";
 import InfoIcon from "@mui/icons-material/Info";
 import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
 import MapIcon from "@mui/icons-material/Map";
 import HelpIcon from "@mui/icons-material/Help";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 
 export default function BasicList() {
 	const [selectedIndex, setSelectedIndex] = React.useState(0);
@@ -41,9 +44,9 @@ export default function BasicList() {
 							onClick={(event) => handleListItemClick(event, 1)}
 						>
 							<ListItemIcon>
-								<MapIcon />
+								<InfoIcon />
 							</ListItemIcon>
-							<ListItemText primary="Track Map" />
+							<ListItemText primary="Event Info" />
 						</ListItemButton>
 					</ListItem>
 					<ListItem disablePadding>
@@ -54,7 +57,7 @@ export default function BasicList() {
 							<ListItemIcon>
 								<MapIcon />
 							</ListItemIcon>
-							<ListItemText primary="Track Map" />
+							<ListItemText primary="Track Details" />
 						</ListItemButton>
 					</ListItem>
 					<ListItem disablePadding>
@@ -63,15 +66,26 @@ export default function BasicList() {
 							onClick={(event) => handleListItemClick(event, 3)}
 						>
 							<ListItemIcon>
-								<MapIcon />
+								<DirectionsCarIcon />
 							</ListItemIcon>
-							<ListItemText primary="Track Map" />
+							<ListItemText primary="Car Requirements" />
 						</ListItemButton>
 					</ListItem>
 					<ListItem disablePadding>
 						<ListItemButton
 							selected={selectedIndex === 4}
 							onClick={(event) => handleListItemClick(event, 4)}
+						>
+							<ListItemIcon>
+								<EmojiPeopleIcon />
+							</ListItemIcon>
+							<ListItemText primary="Driver Essentials" />
+						</ListItemButton>
+					</ListItem>
+					<ListItem disablePadding>
+						<ListItemButton
+							selected={selectedIndex === 5}
+							onClick={(event) => handleListItemClick(event, 5)}
 						>
 							<ListItemIcon>
 								<HelpIcon />
