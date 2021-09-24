@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import Background from "../images/two-cars-back.jpg";
 import Typography from "@material-ui/core/Typography";
 import MediaCard from "../components/MediaCard";
+import AboutNav from "../components/AboutNav";
 
 const useStyles = makeStyles((theme) => ({
 	mainDiv: {
@@ -77,7 +78,10 @@ function About() {
 						justifyContent="center"
 						alignItems="center"
 					>
-						<Grid className={classes.gridSection} item sm={10} lg={10}>
+						<Grid className={classes.gridSection} item sm={10} lg={3}>
+							<AboutNav />
+						</Grid>
+						<Grid className={classes.gridSection} item sm={10} lg={9}>
 							<h2>
 								McPherson Track Center offers you the chance to enjoy your high
 								performance car in a safe, controlled environment on the race
