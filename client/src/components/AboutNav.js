@@ -14,12 +14,21 @@ import MapIcon from "@mui/icons-material/Map";
 import HelpIcon from "@mui/icons-material/Help";
 
 export default function BasicList() {
+	const [selectedIndex, setSelectedIndex] = React.useState(0);
+
+	const handleListItemClick = (event, index) => {
+		setSelectedIndex(index);
+	};
+
 	return (
 		<Box sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
 			<nav aria-label="main mailbox folders">
 				<List>
 					<ListItem disablePadding>
-						<ListItemButton>
+						<ListItemButton
+							selected={selectedIndex === 0}
+							onClick={(event) => handleListItemClick(event, 0)}
+						>
 							<ListItemIcon>
 								<HistoryEduIcon />
 							</ListItemIcon>
@@ -27,7 +36,10 @@ export default function BasicList() {
 						</ListItemButton>
 					</ListItem>
 					<ListItem disablePadding>
-						<ListItemButton>
+						<ListItemButton
+							selected={selectedIndex === 1}
+							onClick={(event) => handleListItemClick(event, 1)}
+						>
 							<ListItemIcon>
 								<MapIcon />
 							</ListItemIcon>
@@ -35,7 +47,10 @@ export default function BasicList() {
 						</ListItemButton>
 					</ListItem>
 					<ListItem disablePadding>
-						<ListItemButton>
+						<ListItemButton
+							selected={selectedIndex === 2}
+							onClick={(event) => handleListItemClick(event, 2)}
+						>
 							<ListItemIcon>
 								<MapIcon />
 							</ListItemIcon>
@@ -43,7 +58,10 @@ export default function BasicList() {
 						</ListItemButton>
 					</ListItem>
 					<ListItem disablePadding>
-						<ListItemButton>
+						<ListItemButton
+							selected={selectedIndex === 3}
+							onClick={(event) => handleListItemClick(event, 3)}
+						>
 							<ListItemIcon>
 								<MapIcon />
 							</ListItemIcon>
@@ -51,7 +69,10 @@ export default function BasicList() {
 						</ListItemButton>
 					</ListItem>
 					<ListItem disablePadding>
-						<ListItemButton>
+						<ListItemButton
+							selected={selectedIndex === 4}
+							onClick={(event) => handleListItemClick(event, 4)}
+						>
 							<ListItemIcon>
 								<HelpIcon />
 							</ListItemIcon>
