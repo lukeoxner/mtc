@@ -11,6 +11,7 @@ import DraftsIcon from "@mui/icons-material/Drafts";
 import InfoIcon from "@mui/icons-material/Info";
 import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
 import MapIcon from "@mui/icons-material/Map";
+import HelpIcon from "@mui/icons-material/Help";
 
 export default function BasicList() {
 	return (
@@ -31,6 +32,30 @@ export default function BasicList() {
 								<MapIcon />
 							</ListItemIcon>
 							<ListItemText primary="Track Map" />
+						</ListItemButton>
+					</ListItem>
+					<ListItem disablePadding>
+						<ListItemButton>
+							<ListItemIcon>
+								<MapIcon />
+							</ListItemIcon>
+							<ListItemText primary="Track Map" />
+						</ListItemButton>
+					</ListItem>
+					<ListItem disablePadding>
+						<ListItemButton>
+							<ListItemIcon>
+								<MapIcon />
+							</ListItemIcon>
+							<ListItemText primary="Track Map" />
+						</ListItemButton>
+					</ListItem>
+					<ListItem disablePadding>
+						<ListItemButton>
+							<ListItemIcon>
+								<HelpIcon />
+							</ListItemIcon>
+							<ListItemText primary="Tips & FAQ" />
 						</ListItemButton>
 					</ListItem>
 				</List>
