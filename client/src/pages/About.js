@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import MediaCard from '../components/MediaCard';
 import AboutNav from '../components/AboutNav';
 import IntroCard from '../components/about-page-cards/Intro';
+import TrackCard from '../components/about-page-cards/Track';
 
 const useStyles = makeStyles((theme) => ({
 	mainDiv: {
@@ -66,7 +67,7 @@ function About() {
 	const classes = useStyles();
 	const theme = useTheme();
 
-	let activeCard = 'IntroCard';
+	let activeCard = 'TrackCard';
 
 	return (
 		<>
@@ -89,6 +90,8 @@ function About() {
 								switch (activeCard) {
 									case 'IntroCard':
 										return <IntroCard />;
+									case 'TrackCard':
+										return <TrackCard />;
 									default:
 										return null;
 								}

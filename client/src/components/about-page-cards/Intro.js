@@ -3,6 +3,7 @@ import React from 'react';
 function Intro() {
 	return (
 		<div>
+			<h1>Intro Card</h1>
 			<h2>
 				McPherson Track Center offers you the chance to enjoy your high
 				performance car in a safe, controlled environment on the race track.
