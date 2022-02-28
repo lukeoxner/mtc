@@ -11,8 +11,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 // Icons
-import InboxIcon from '@mui/icons-material/Inbox';
-import DraftsIcon from '@mui/icons-material/Drafts';
+import CheckIcon from '@mui/icons-material/FactCheck';
+import RegIcon from '@mui/icons-material/HowToReg';
 import InfoIcon from '@mui/icons-material/Info';
 import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import MapIcon from '@mui/icons-material/Map';
@@ -75,7 +75,7 @@ export default function BasicList() {
 										onClick={(event) => handleListItemClick(event, 0)}
 									>
 										<ListItemIcon>
-											<HistoryEduIcon />
+											<EmojiPeopleIcon />
 										</ListItemIcon>
 										<ListItemText primary='Introduction' />
 									</ListItemButton>
@@ -90,7 +90,7 @@ export default function BasicList() {
 										<ListItemIcon>
 											<InfoIcon />
 										</ListItemIcon>
-										<ListItemText primary='Event' />
+										<ListItemText primary='Event Info' />
 									</ListItemButton>
 								</ListItem>
 							</Grid>
@@ -103,7 +103,7 @@ export default function BasicList() {
 										<ListItemIcon>
 											<MapIcon />
 										</ListItemIcon>
-										<ListItemText primary='Track Details' />
+										<ListItemText primary='Track Info' />
 									</ListItemButton>
 								</ListItem>
 							</Grid>
@@ -114,9 +114,9 @@ export default function BasicList() {
 										onClick={(event) => handleListItemClick(event, 3)}
 									>
 										<ListItemIcon>
-											<DirectionsCarIcon />
+											<CheckIcon />
 										</ListItemIcon>
-										<ListItemText primary='Car Requirements' />
+										<ListItemText primary='Requirements' />
 									</ListItemButton>
 								</ListItem>
 							</Grid>
@@ -127,9 +127,9 @@ export default function BasicList() {
 										onClick={(event) => handleListItemClick(event, 4)}
 									>
 										<ListItemIcon>
-											<EmojiPeopleIcon />
+											<RegIcon />
 										</ListItemIcon>
-										<ListItemText primary='Driver Essentials' />
+										<ListItemText primary='Registration' />
 									</ListItemButton>
 								</ListItem>
 							</Grid>
