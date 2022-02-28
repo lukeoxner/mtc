@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { useContext } from 'react';
 import AboutContext from '../utils/AboutContext';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { Grid, Container } from '@material-ui/core';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -18,7 +20,19 @@ import HelpIcon from '@mui/icons-material/Help';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
+const useStyles = makeStyles((theme) => ({
+	root: {
+		'& .MuiListItem-root': {
+			[theme.breakpoints.down('sm')]: {
+				padding: '0px',
+			},
+		},
+	},
+}));
+
 export default function BasicList() {
+	const classes = useStyles();
+
 	const [selectedIndex, setSelectedIndex] = React.useState(0);
 
 	const changeAboutContext = useContext(AboutContext);
@@ -48,78 +62,94 @@ export default function BasicList() {
 	};
 
 	return (
-		<Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-			<nav aria-label='main mailbox folders'>
-				<List>
-					<ListItem disablePadding>
-						<ListItemButton
-							value='Intro'
-							selected={selectedIndex === 0}
-							onClick={(event) => handleListItemClick(event, 0)}
-						>
-							<ListItemIcon>
-								<HistoryEduIcon />
-							</ListItemIcon>
-							<ListItemText primary='Introduction' />
-						</ListItemButton>
-					</ListItem>
-					<ListItem disablePadding>
-						<ListItemButton
-							selected={selectedIndex === 1}
-							onClick={(event) => handleListItemClick(event, 1)}
-						>
-							<ListItemIcon>
-								<InfoIcon />
-							</ListItemIcon>
-							<ListItemText primary='Event Info' />
-						</ListItemButton>
-					</ListItem>
-					<ListItem disablePadding>
-						<ListItemButton
-							selected={selectedIndex === 2}
-							onClick={(event) => handleListItemClick(event, 2)}
-						>
-							<ListItemIcon>
-								<MapIcon />
-							</ListItemIcon>
-							<ListItemText primary='Track Details' />
-						</ListItemButton>
-					</ListItem>
-					<ListItem disablePadding>
-						<ListItemButton
-							selected={selectedIndex === 3}
-							onClick={(event) => handleListItemClick(event, 3)}
-						>
-							<ListItemIcon>
-								<DirectionsCarIcon />
-							</ListItemIcon>
-							<ListItemText primary='Car Requirements' />
-						</ListItemButton>
-					</ListItem>
-					<ListItem disablePadding>
-						<ListItemButton
-							selected={selectedIndex === 4}
-							onClick={(event) => handleListItemClick(event, 4)}
-						>
-							<ListItemIcon>
-								<EmojiPeopleIcon />
-							</ListItemIcon>
-							<ListItemText primary='Driver Essentials' />
-						</ListItemButton>
-					</ListItem>
-					<ListItem disablePadding>
-						<ListItemButton
-							selected={selectedIndex === 5}
-							onClick={(event) => handleListItemClick(event, 5)}
-						>
-							<ListItemIcon>
-								<HelpIcon />
-							</ListItemIcon>
-							<ListItemText primary='Tips & FAQ' />
-						</ListItemButton>
-					</ListItem>
-				</List>
-			</nav>
-		</Box>
+		<div className={classes.root}>
+			<Box sx={{ width: '100%', maxWidth: 600, bgcolor: 'background.paper' }}>
+				<nav aria-label='main mailbox folders'>
+					<List>
+						<Grid container sx={{ width: '100%' }}>
+							<Grid item xs={6} md={12}>
+								<ListItem disablePadding>
+									<ListItemButton
+										value='Intro'
+										selected={selectedIndex === 0}
+										onClick={(event) => handleListItemClick(event, 0)}
+									>
+										<ListItemIcon>
+											<HistoryEduIcon />
+										</ListItemIcon>
+										<ListItemText primary='Introduction' />
+									</ListItemButton>
+								</ListItem>
+							</Grid>
+							<Grid item xs={6} md={12}>
+								<ListItem disablePadding>
+									<ListItemButton
+										selected={selectedIndex === 1}
+										onClick={(event) => handleListItemClick(event, 1)}
+									>
+										<ListItemIcon>
+											<InfoIcon />
+										</ListItemIcon>
+										<ListItemText primary='Event' />
+									</ListItemButton>
+								</ListItem>
+							</Grid>
+							<Grid item xs={6} md={12}>
+								<ListItem disablePadding>
+									<ListItemButton
+										selected={selectedIndex === 2}
+										onClick={(event) => handleListItemClick(event, 2)}
+									>
+										<ListItemIcon>
+											<MapIcon />
+										</ListItemIcon>
+										<ListItemText primary='Track Details' />
+									</ListItemButton>
+								</ListItem>
+							</Grid>
+							<Grid item xs={6} md={12}>
+								<ListItem disablePadding>
+									<ListItemButton
+										selected={selectedIndex === 3}
+										onClick={(event) => handleListItemClick(event, 3)}
+									>
+										<ListItemIcon>
+											<DirectionsCarIcon />
+										</ListItemIcon>
+										<ListItemText primary='Car Requirements' />
+									</ListItemButton>
+								</ListItem>
+							</Grid>
+							<Grid item xs={6} md={12}>
+								<ListItem disablePadding>
+									<ListItemButton
+										selected={selectedIndex === 4}
+										onClick={(event) => handleListItemClick(event, 4)}
+									>
+										<ListItemIcon>
+											<EmojiPeopleIcon />
+										</ListItemIcon>
+										<ListItemText primary='Driver Essentials' />
+									</ListItemButton>
+								</ListItem>
+							</Grid>
+							<Grid item xs={6} md={12}>
+								<ListItem disablePadding>
+									<ListItemButton
+										selected={selectedIndex === 5}
+										onClick={(event) => handleListItemClick(event, 5)}
+									>
+										<ListItemIcon>
+											<HelpIcon />
+										</ListItemIcon>
+										<ListItemText primary='Tips & FAQ' />
+									</ListItemButton>
+								</ListItem>
+							</Grid>
+						</Grid>
+					</List>
+				</nav>
+			</Box>
+		</div>
 	);
 }

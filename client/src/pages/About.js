@@ -7,7 +7,7 @@ import {
 	Grid,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import Background from '../images/two-cars-back.jpg';
+import Background from '../images/two-cars-back.png';
 import Typography from '@material-ui/core/Typography';
 import AboutContext from '../utils/AboutContext';
 import MediaCard from '../components/MediaCard';
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		minWidth: 275,
 		// maxHeight: "90",
-		marginTop: '7%',
+		marginTop: '20px',
 		backgroundColor: `rgba(0,0,0,.0)`,
 		overflow: 'hidden',
 	},
@@ -38,23 +38,29 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: '50px',
 		marginBottom: '20px',
 		// paddingTop: "50px",
-		height: '400px',
+		height: '250px',
 		width: '100',
-		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.6), rgba(000, 000, 000, 0.70)), url(${Background})`,
+		// backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.6), rgba(000, 000, 000, 0.70)), url(${Background})`,
+		backgroundImage: `url(${Background})`,
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
-		backgroundPosition: '50% 80%',
-		backgroundAttachment: 'fixed',
+		backgroundPosition: '50% 70%',
+		backgroundAttachment: 'relative',
+		[theme.breakpoints.down('sm')]: {
+			backgroundImage: 'none',
+			height: '10px',
+		},
 	},
 	heroText: {
-		fontSize: '2.5rem',
+		fontSize: '3.5rem',
 		fontWeight: '600',
 		color: '#fff',
 		textAlign: 'center',
 		[theme.breakpoints.down('sm')]: {
 			fontSize: '2.0rem',
+			color: '#000',
 		},
-		paddingTop: '70px',
+		paddingTop: '110px',
 	},
 	gridSection: {
 		// padding: "20px",
@@ -78,7 +84,7 @@ function About() {
 		<>
 			<AboutContext.Provider value={handleCardChange}>
 				<div className={classes.hero}>
-					<Typography className={classes.heroText}>About Us</Typography>
+					{/* <Typography className={classes.heroText}>About Us</Typography> */}
 				</div>
 				<div className={classes.mainDiv}>
 					<Container className={classes.root}>
@@ -88,10 +94,10 @@ function About() {
 							justifyContent='center'
 							// alignItems="center"
 						>
-							<Grid className={classes.gridSection} item sm={10} lg={3}>
+							<Grid className={classes.gridSection} item sm={10} md={3}>
 								<AboutNav />
 							</Grid>
-							<Grid className={classes.gridSection} item sm={10} lg={9}>
+							<Grid className={classes.gridSection} item sm={10} md={9}>
 								{(() => {
 									switch (card) {
 										case 'intro':
