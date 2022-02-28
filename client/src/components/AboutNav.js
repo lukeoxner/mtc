@@ -47,7 +47,16 @@ export default function BasicList() {
 				cardName = 'eventInfo';
 				break;
 			case 2:
-				cardName = 'track';
+				cardName = 'trackInfo';
+				break;
+			case 3:
+				cardName = 'requirements';
+				break;
+			case 4:
+				cardName = 'registrationInfo';
+				break;
+			case 5:
+				cardName = 'tipsFAQ';
 				break;
 			default:
 				cardName = 'intro';

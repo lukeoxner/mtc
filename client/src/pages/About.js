@@ -13,7 +13,11 @@ import AboutContext from '../utils/AboutContext';
 import MediaCard from '../components/MediaCard';
 import AboutNav from '../components/AboutNav';
 import IntroCard from '../components/about-page-cards/Intro';
-import TrackCard from '../components/about-page-cards/Track';
+import EventInfoCard from '../components/about-page-cards/EventInfo';
+import TrackInfoCard from '../components/about-page-cards/TrackInfo';
+import RequirementsCard from '../components/about-page-cards/Requirements';
+import RegistrationInfoCard from '../components/about-page-cards/RegistrationInfo';
+import TipsFAQCard from '../components/about-page-cards/TipsFAQ';
 
 const useStyles = makeStyles((theme) => ({
 	mainDiv: {
@@ -102,8 +106,16 @@ function About() {
 									switch (card) {
 										case 'intro':
 											return <IntroCard />;
-										case 'track':
-											return <TrackCard />;
+										case 'eventInfo':
+											return <EventInfoCard />;
+										case 'trackInfo':
+											return <TrackInfoCard />;
+										case 'requirements':
+											return <RequirementsCard />;
+										case 'registrationInfo':
+											return <RegistrationInfoCard />;
+										case 'tipsFAQ':
+											return <TipsFAQCard />;
 										default:
 											return null;
 									}
