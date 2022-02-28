@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import NavContext from '../utils/NavContext';
 import { Link } from 'react-router-dom';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -76,19 +77,13 @@ const useStyles = makeStyles((theme) => ({
 export default function PrimarySearchAppBar() {
 	const classes = useStyles();
 
-	useEffect(() => {
-		switch (window.location.hash) {
-			case '#/about':
-				console.log('its the about page');
-				break;
+	const changeNavContext = useContext(NavContext);
 
-			case '#/schedule':
-				console.log('its the schedule page');
-				break;
-			default:
-				console.log('no page found');
-		}
-	});
+	const handleNavClick = (e) => {
+		e.preventDefault();
+
+		console.log(e.target.textContent);
+	};
 
 	const [anchorEl, setAnchorEl] = React.useState(null);
 	const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);

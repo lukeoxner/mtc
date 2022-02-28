@@ -11,9 +11,13 @@ import Hallett from './pages/Hallett';
 function App() {
 	const [page, setPage] = useState('Home');
 
+	const handlePageChange = (newPage) => {
+		setPage(newPage);
+	};
+
 	return (
 		<div>
-			<NavContext.Provider>
+			<NavContext.Provider value={handlePageChange}>
 				<Router>
 					<NavBar currentPage={'derp'} />
 					<Switch>

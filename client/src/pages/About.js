@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
 	Button,
 	makeStyles,
@@ -9,6 +9,7 @@ import {
 import { Link } from 'react-router-dom';
 import Background from '../images/two-cars-back.jpg';
 import Typography from '@material-ui/core/Typography';
+import AboutContext from '../utils/AboutContext';
 import MediaCard from '../components/MediaCard';
 import AboutNav from '../components/AboutNav';
 import IntroCard from '../components/about-page-cards/Intro';
@@ -67,39 +68,45 @@ function About() {
 	const classes = useStyles();
 	const theme = useTheme();
 
-	let activeCard = 'TrackCard';
+	const [card, setCard] = useState('intro');
+
+	const handleCardChange = (newCard) => {
+		setCard(newCard);
+	};
 
 	return (
 		<>
-			<div className={classes.hero}>
-				<Typography className={classes.heroText}>About Us</Typography>
-			</div>
-			<div className={classes.mainDiv}>
-				<Container className={classes.root}>
-					<Grid
-						container
-						direction='row'
-						justifyContent='center'
-						// alignItems="center"
-					>
-						<Grid className={classes.gridSection} item sm={10} lg={3}>
-							<AboutNav />
+			<AboutContext.Provider value={handleCardChange}>
+				<div className={classes.hero}>
+					<Typography className={classes.heroText}>About Us</Typography>
+				</div>
+				<div className={classes.mainDiv}>
+					<Container className={classes.root}>
+						<Grid
+							container
+							direction='row'
+							justifyContent='center'
+							// alignItems="center"
+						>
+							<Grid className={classes.gridSection} item sm={10} lg={3}>
+								<AboutNav />
+							</Grid>
+							<Grid className={classes.gridSection} item sm={10} lg={9}>
+								{(() => {
+									switch (card) {
+										case 'intro':
+											return <IntroCard />;
+										case 'track':
+											return <TrackCard />;
+										default:
+											return null;
+									}
+								})()}
+							</Grid>
 						</Grid>
-						<Grid className={classes.gridSection} item sm={10} lg={9}>
-							{(() => {
-								switch (activeCard) {
-									case 'IntroCard':
-										return <IntroCard />;
-									case 'TrackCard':
-										return <TrackCard />;
-									default:
-										return null;
-								}
-							})()}
-						</Grid>
-					</Grid>
-				</Container>
-			</div>
+					</Container>
+				</div>
+			</AboutContext.Provider>
 		</>
 	);
 }
