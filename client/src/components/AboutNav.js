@@ -47,15 +47,9 @@ export default function BasicList() {
 				cardName = 'eventInfo';
 				break;
 			case 2:
-				cardName = 'trackInfo';
-				break;
-			case 3:
 				cardName = 'requirements';
 				break;
-			case 4:
-				cardName = 'registrationInfo';
-				break;
-			case 5:
+			case 3:
 				cardName = 'tipsFAQ';
 				break;
 			default:
@@ -110,19 +104,6 @@ export default function BasicList() {
 										onClick={(event) => handleListItemClick(event, 2)}
 									>
 										<ListItemIcon>
-											<MapIcon />
-										</ListItemIcon>
-										<ListItemText primary='Track Info' />
-									</ListItemButton>
-								</ListItem>
-							</Grid>
-							<Grid item xs={6} md={12}>
-								<ListItem disablePadding>
-									<ListItemButton
-										selected={selectedIndex === 3}
-										onClick={(event) => handleListItemClick(event, 3)}
-									>
-										<ListItemIcon>
 											<CheckIcon />
 										</ListItemIcon>
 										<ListItemText primary='Requirements' />
@@ -132,21 +113,8 @@ export default function BasicList() {
 							<Grid item xs={6} md={12}>
 								<ListItem disablePadding>
 									<ListItemButton
-										selected={selectedIndex === 4}
-										onClick={(event) => handleListItemClick(event, 4)}
-									>
-										<ListItemIcon>
-											<RegIcon />
-										</ListItemIcon>
-										<ListItemText primary='Registration' />
-									</ListItemButton>
-								</ListItem>
-							</Grid>
-							<Grid item xs={6} md={12}>
-								<ListItem disablePadding>
-									<ListItemButton
-										selected={selectedIndex === 5}
-										onClick={(event) => handleListItemClick(event, 5)}
+										selected={selectedIndex === 3}
+										onClick={(event) => handleListItemClick(event, 3)}
 									>
 										<ListItemIcon>
 											<HelpIcon />

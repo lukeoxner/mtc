@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
 	title: {
 		fontFamily: 'Cairo, sans-serif',
 		fontWeight: '500',
-		fontSize: '30px',
+		fontSize: '29px',
 		letterSpacing: '1px',
 		letterSpacing: '0.5px',
 		color: '#ddd',
