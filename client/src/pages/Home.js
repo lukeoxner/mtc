@@ -71,10 +71,21 @@ const useStyles = makeStyles((theme) => ({
 	},
 	button: {
 		backgroundColor: 'rgba(0,0,0,0.5)',
-		borderColor: '#ad0a0a',
+		borderColor: '#8f0707',
 		borderStyle: 'solid',
 		borderWidth: '2px',
 		marginTop: '40px',
+		'&:hover': {
+			backgroundColor: 'rgba(0,0,0,0.7)',
+			color: '#000',
+			boxShadow: 'none',
+			borderColor: '#cf0c0c',
+			// boxShadow: '0 0 0 0.2rem rgba(0,0,0,.5)',
+			// borderWidth: '2.0px',
+		},
+		'&:focus': {
+			boxShadow: '0 0 0 0.4rem rgba(0,123,255,.5)',
+		},
 		[theme.breakpoints.down('sm')]: {
 			marginTop: '400px',
 			backgroundColor: 'rgba(0,0,0,0.7)',
