@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
 		textDecoration: 'none',
 	},
 	linkText: {
-		color: '#ad0a0a',
+		color: '#cf0c0c',
 		textDecoration: 'none',
 		fontSize: '1rem',
 		fontStyle: 'italic',
