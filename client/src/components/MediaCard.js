@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'center',
 		margin: 'auto',
 		marginTop: '30px',
+		backgroundColor: '#eee',
 	},
 	media: {
 		maxWidth: 300,
@@ -45,12 +46,12 @@ const useStyles = makeStyles((theme) => ({
 	},
 	button: {
 		marginBottom: '20px',
-		color: '#e00000',
-		borderColor: '#e00000',
+		color: '##ad0a0a',
+		borderColor: '#ad0a0a',
 	},
 	link: {
 		textDecoration: 'none',
-		color: '#e00000',
+		color: '#ad0a0a',
 	},
 }));
 

@@ -1,17 +1,23 @@
 import React from 'react';
+import {
+	Button,
+	makeStyles,
+	useTheme,
+	Container,
+	Grid,
+} from '@material-ui/core';
 
-function Track() {
+const useStyles = makeStyles((theme) => ({}));
+
+function TrackInfo() {
+	const classes = useStyles();
+	const theme = useTheme();
+
 	return (
 		<div>
-			<h1>Track Card</h1>
-			<h2>
-				McPherson Track Center is proud to partner with Hallett Motor Racing
-				Circuit for our track days.
-			</h2>
-			<br />
-			<h4>Hallett is frickin awesome!</h4>
+			<h2>Track Info Page</h2>
 		</div>
 	);
 }
 
-export default Track;
+export default TrackInfo;

@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 		maxHeight: '90',
 		marginTop: '7%',
 		backgroundColor: `rgba(0,0,0,.0)`,
-		color: 'white',
+		color: '#ddd',
 		overflow: 'hidden',
 	},
 	hero: {

@@ -14,6 +14,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import { fontSize, fontWeight } from '@material-ui/system';
 
 const useStyles = makeStyles((theme) => ({
 	grow: {
@@ -48,13 +49,13 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	navLink: {
-		color: '#ffffff',
+		color: '#ddd',
 		textDecoration: 'none',
 		marginRight: '2rem',
 		fontWeight: '500',
 		fontSize: '1.2rem',
 		'&:hover': {
-			color: '#e00',
+			color: '#ad0a0a',
 		},
 	},
 
@@ -64,13 +65,22 @@ const useStyles = makeStyles((theme) => ({
 		color: '#000000',
 	},
 	title: {
-		fontFamily: 'Zen Dots',
+		fontFamily: 'Cairo, sans-serif',
+		fontWeight: '500',
+		fontSize: '30px',
+		letterSpacing: '1px',
+		letterSpacing: '0.5px',
+		color: '#ddd',
 		[theme.breakpoints.down('sm')]: {
 			fontSize: '1.0rem',
 		},
 	},
 	mcPherson: {
-		color: '#e00000',
+		color: '#ad0a0a',
+		fontFamily: 'Cairo, sans-serif',
+		fontWeight: '700',
+		letterSpacing: '0.5px',
+		fontSize: '30px',
 	},
 }));
 

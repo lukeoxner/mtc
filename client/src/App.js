@@ -21,7 +21,9 @@ function App() {
 				<Router>
 					<NavBar currentPage={'derp'} />
 					<Switch>
-						<Route exact path='/' component={Home} />
+						<Route exact path='/'>
+							<Home />
+						</Route>
 						<Route exact path='/home' component={Home} />
 						<Route exact path='/about' component={About} />
 						<Route exact path='/schedule' component={Schedule} />
