@@ -15,6 +15,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import { fontSize, fontWeight } from '@material-ui/system';
+import Logo from '../images/mtc-logo.png';
 
 const useStyles = makeStyles((theme) => ({
 	grow: {
@@ -81,6 +82,9 @@ const useStyles = makeStyles((theme) => ({
 		fontWeight: '700',
 		letterSpacing: '0.5px',
 		fontSize: '30px',
+	},
+	logo: {
+		height: '50px',
 	},
 }));
 
@@ -156,9 +160,10 @@ export default function PrimarySearchAppBar() {
 							textDecoration: 'none',
 						}}
 					>
-						<Typography className={classes.title} variant='h5' noWrap>
+						<img className={classes.logo} src={Logo} />
+						{/* <Typography className={classes.title} variant='h5' noWrap>
 							<span className={classes.mcPherson}>McPherson</span> Track Center
-						</Typography>
+						</Typography> */}
 					</Link>
 					<div className={classes.grow} />
 					<div

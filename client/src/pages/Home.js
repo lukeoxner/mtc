@@ -1,36 +1,20 @@
 import React from 'react';
-import { Button, makeStyles, useTheme, Container } from '@material-ui/core';
+import {
+	Button,
+	makeStyles,
+	useTheme,
+	Container,
+	Grid,
+} from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import Background from '../images/gt4-background.jpg';
+import BackgroundDesktop from '../images/gt4-background.jpg';
+import BackgroundMobile from '../images/mobile-landing.png';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
-	root: {
-		minWidth: 275,
-		position: 'absolute',
-		top: '30%',
-		left: '7%',
-		width: '45%',
-		maxHeight: '90',
-		marginTop: '2rem',
-		backgroundColor: `rgba(0,0,0,.0)`,
-		color: '#ddd',
-		overflow: 'hidden',
-	},
-	hero: {
-		fontSize: '2.3rem',
-		fontWeight: '600',
-		fontStyle: 'italic',
-		textShadow: '2px 2px #000000',
-		textAlign: 'left',
-		marginBottom: '30px',
-		[theme.breakpoints.down('sm')]: {
-			fontSize: '1.5rem',
-		},
-	},
-	textDiv: {
+	background: {
 		position: 'relative',
-		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0), rgba(000, 000, 000, 0.40)), url(${Background})`,
+		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0), rgba(000, 000, 000, 0.40)), url(${BackgroundDesktop})`,
 		width: '100',
 		height: '100vh',
 		backgroundRepeat: 'no-repeat',
@@ -38,9 +22,62 @@ const useStyles = makeStyles((theme) => ({
 		backgroundPosition: 'center center',
 		backgroundAttachment: 'fixed',
 		overflow: 'hidden',
+		[theme.breakpoints.down('sm')]: {
+			backgroundImage: `url(${BackgroundMobile})`,
+		},
+	},
+	root: {
+		color: '#ddd',
+		overflow: 'hidden',
+		marginTop: '200px',
+		[theme.breakpoints.down('sm')]: {
+			// small version stuff here
+		},
+	},
+	grid: {
+		[theme.breakpoints.down('sm')]: {
+			justifyContent: 'center',
+		},
+	},
+	subGrid: {
+		justifyContent: 'center',
+		textAlign: 'center',
+	},
+	hero: {
+		fontSize: '2.1rem',
+		fontWeight: '600',
+		fontStyle: 'italic',
+		textShadow: '2px 2px #000000',
+		textAlign: 'center',
+		[theme.breakpoints.down('sm')]: {
+			fontSize: '1.5rem',
+		},
+		[theme.breakpoints.between('sm', 'md')]: {
+			fontSize: '1.9rem',
+		},
+	},
+	mtc: {
+		fontSize: '2.7rem',
+		fontWeight: '700',
+		fontStyle: 'italic',
+		textShadow: '2px 2px #000000',
+		textAlign: 'center',
+		[theme.breakpoints.down('sm')]: {
+			fontSize: '1.8rem',
+		},
+		[theme.breakpoints.between('sm', 'md')]: {
+			fontSize: '2.5rem',
+		},
 	},
 	button: {
 		borderColor: '#ad0a0a',
+		marginTop: '20px',
+		[theme.breakpoints.down('sm')]: {
+			marginTop: '400px',
+		},
+		[theme.breakpoints.only('sm')]: {
+			marginTop: '450px',
+		},
 	},
 	link: {
 		textDecoration: 'none',
@@ -49,7 +86,6 @@ const useStyles = makeStyles((theme) => ({
 		color: '#ad0a0a',
 		textDecoration: 'none',
 		fontSize: '1rem',
-		position: 'relative',
 		fontStyle: 'italic',
 		fontWeight: '500',
 	},
@@ -61,16 +97,33 @@ function Home() {
 
 	return (
 		<>
-			<div className={classes.textDiv}>
+			<div className={classes.background}>
 				<Container className={classes.root}>
-					<Typography className={classes.hero}>
-						Satisfy your need for speed with McPherson Track Center!
-					</Typography>
-					<Button variant='outlined' className={classes.button}>
-						<Link className={classes.link} to='/about'>
-							<Typography className={classes.linkText}>Learn More</Typography>
-						</Link>
-					</Button>
+					<Grid container direction='row' className={classes.grid}>
+						<Grid item sm={10} md={6}>
+							<Grid container direction='row' className={classes.subGrid}>
+								<Grid item xs={12}>
+									<Typography className={classes.hero}>
+										Satisfy your need for speed with
+									</Typography>
+								</Grid>
+								<Grid item xs={12}>
+									<Typography className={classes.mtc}>
+										McPherson Track Center
+									</Typography>
+								</Grid>
+								<Grid item xs={12}>
+									<Button variant='outlined' className={classes.button}>
+										<Link className={classes.link} to='/about'>
+											<Typography className={classes.linkText}>
+												Learn More
+											</Typography>
+										</Link>
+									</Button>
+								</Grid>
+							</Grid>
+						</Grid>
+					</Grid>
 				</Container>
 			</div>
 		</>
