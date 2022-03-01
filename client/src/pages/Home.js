@@ -70,13 +70,14 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	button: {
+		backgroundColor: 'rgba(0,0,0,0.5)',
 		borderColor: '#ad0a0a',
-		marginTop: '20px',
+		borderStyle: 'solid',
+		borderWidth: '2px',
+		marginTop: '40px',
 		[theme.breakpoints.down('sm')]: {
 			marginTop: '400px',
-		},
-		[theme.breakpoints.only('sm')]: {
-			marginTop: '450px',
+			backgroundColor: 'rgba(0,0,0,0.7)',
 		},
 	},
 	link: {
@@ -88,6 +89,9 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: '1rem',
 		fontStyle: 'italic',
 		fontWeight: '500',
+		[theme.breakpoints.down('sm')]: {
+			fontSize: '2.0rem',
+		},
 	},
 }));
 
@@ -113,7 +117,7 @@ function Home() {
 									</Typography>
 								</Grid>
 								<Grid item xs={12}>
-									<Button variant='outlined' className={classes.button}>
+									<Button variant='contained' className={classes.button}>
 										<Link className={classes.link} to='/about'>
 											<Typography className={classes.linkText}>
 												Learn More
