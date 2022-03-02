@@ -26,20 +26,15 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		minWidth: 275,
 		maxHeight: '90',
-		marginTop: '7%',
+		marginTop: '70px',
 		backgroundColor: `rgba(0,0,0,.0)`,
 		color: '#ddd',
 		overflow: 'hidden',
 	},
 	hero: {
-		fontSize: '2.3rem',
-		fontWeight: '600',
-		textShadow: '2px 2px #000000',
 		textAlign: 'center',
-		marginTop: '40px',
-		marginBottom: '40px',
 		[theme.breakpoints.down('sm')]: {
-			fontSize: '2.0rem',
+			fontSize: '2.3rem',
 		},
 	},
 }));
@@ -52,7 +47,9 @@ function Schedule() {
 		<>
 			<div className={classes.mainDiv}>
 				<Container className={classes.root}>
-					<Typography className={classes.hero}>Upcoming Events</Typography>
+					<Typography variant='h2' className={classes.hero}>
+						Upcoming Events
+					</Typography>
 					<Grid
 						container
 						direction='row'

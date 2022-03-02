@@ -25,11 +25,11 @@ function Requirements() {
 
 	return (
 		<>
-			<Grid container direction='row'>
-				<Grid item xs={12} className={classes.heading}>
+			<Grid container direction='row' justifyContent='center'>
+				<Grid item xs={10} className={classes.heading}>
 					<Typography variant='h4'>Track Day Requirements</Typography>
 				</Grid>
-				<Grid item xs={12} className={classes.heading}>
+				<Grid item xs={10} className={classes.heading}>
 					<Typography>
 						Here is a list of the things you'll need to participate in a track
 						day with McPherson Track Center.
