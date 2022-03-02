@@ -5,9 +5,19 @@ import {
 	useTheme,
 	Container,
 	Grid,
+	Typography,
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
+	heading: {
+		textAlign: 'center',
+		marginBottom: '15px',
+	},
+	subHeading: {
+		textAlign: 'center',
+		marginTop: '15px',
+	},
+
 	above: {
 		display: 'none',
 	},
@@ -30,19 +40,22 @@ function Intro() {
 	const theme = useTheme();
 
 	return (
-		<div>
-			<h2>
-				McPherson Track Center offers you the chance to enjoy your high
-				performance car in a safe, controlled environment on the race track.
-			</h2>
-			<br />
-			<h4>
-				Whether you're brand new to high performance driving, or a seasoned
-				track day veteran - you'll have a blast our events. Learn more by
-				clicking on the tabs <span className={classes.left}>to the left</span>
-				<span className={classes.above}>above</span>.
-			</h4>
-		</div>
+		<>
+			<Grid container direction='row' justifyContent='center'>
+				<Grid item xs={12} className={classes.heading}>
+					<Typography variant='h4'>
+						Introduction to McPherson Track Center
+					</Typography>
+				</Grid>
+				<Grid item xs={10}>
+					<Typography>
+						Whether you're a seasoned track day veteran, or brand new to the
+						world of high performance driving - you'll have a blast at McPherson
+						Track Center track day events.
+					</Typography>
+				</Grid>
+			</Grid>
+		</>
 	);
 }
 

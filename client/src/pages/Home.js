@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
 			// borderWidth: '2.0px',
 		},
 		'&:focus': {
-			boxShadow: '0 0 0 0.4rem rgba(0,123,255,.5)',
+			// boxShadow: '0 0 0 0.4rem rgba(0,123,255,.5)',
 		},
 		[theme.breakpoints.down('sm')]: {
 			marginTop: '400px',
@@ -128,13 +128,13 @@ function Home() {
 									</Typography>
 								</Grid>
 								<Grid item xs={12}>
-									<Button variant='contained' className={classes.button}>
-										<Link className={classes.link} to='/about'>
+									<Link className={classes.link} to='/about'>
+										<Button variant='contained' className={classes.button}>
 											<Typography className={classes.linkText}>
 												Learn More
 											</Typography>
-										</Link>
-									</Button>
+										</Button>
+									</Link>
 								</Grid>
 							</Grid>
 						</Grid>
