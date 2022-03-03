@@ -6,7 +6,12 @@ import {
 	Container,
 	Grid,
 	Typography,
+	Link,
 } from '@material-ui/core';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import PerfectionPlusLogo from '../../images/perfection-plus-logo.jpeg';
 
 const useStyles = makeStyles((theme) => ({
@@ -23,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
 		textIndent: '15px',
 		fontSize: '14px',
 		fontStyle: 'italic',
+	},
+	inspectionAdContainer: {
+		marginTop: '35px',
+		marginBottom: '50px',
 	},
 	perfectionPlusLogoContainer: {
 		marginTop: '15px',
@@ -93,30 +102,71 @@ function Requirements() {
 						The most important thing is that your car is well maintained and in
 						good, safe running order. It's best to have a thorough inspection
 						performed by a mechanic experienced with race cars and high
-						performance driving events. We recommend having this inspection
-						performed by Perfection Plus - the official provider of maintenance,
-						repair, and race prep for McPherson Track Center.
+						performance driving events.
 					</Typography>
-					<br />
-				</Grid>
-				<Grid
-					item
-					xs={10}
-					md={5}
-					justifyContent='center'
-					className={classes.perfectionPlusLogoContainer}
-				>
-					<img src={PerfectionPlusLogo} class={classes.perfectionPlusLogo} />
-				</Grid>
-				<Grid item xs={5} md={2}>
-					<br />
-					<Typography variant='h6'>Perfection Plus</Typography>
-					<Typography variant='h6'>501-565-1911</Typography>
-				</Grid>
-				<Grid item xs={5} md={2} className={classes.address}>
-					<br />
-					<Typography variant='h6'>9 Trigon Place</Typography>
-					<Typography variant='h6'>Little Rock, AR</Typography>
+					<Grid
+						container
+						direction='row'
+						justifyContent='space-between'
+						className={classes.inspectionAdContainer}
+					>
+						<Grid item xs={10} md={6}>
+							<Typography>
+								We recommend having this inspection performed by Perfection Plus
+								- the official provider of maintenance, repair, and race prep
+								for McPherson Track Center. Operated by father / son duo Steve
+								and Rick McPherson, Perfection Plus has been Arkansas' premier
+								independent service facility for Porsche&reg; and other exotics
+								for nearly two decades.
+							</Typography>
+						</Grid>
+
+						<Grid item xs={8} md={5}>
+							<Card sx={{ marginBottom: '20px' }}>
+								<CardMedia
+									component='img'
+									height='70'
+									image={PerfectionPlusLogo}
+									alt='perfection plus logo'
+								/>
+								<CardContent>
+									<Grid container direction='row'>
+										<Grid item xs={6}>
+											<Typography variant='h6' color='text.secondary'>
+												501-565-1911
+											</Typography>
+										</Grid>
+										<Grid item xs={6} align='center'>
+											<Typography variant='body2' color='text.secondary'>
+												9 Trigon Place
+											</Typography>
+											<Typography variant='body2' color='text.secondary'>
+												Little Rock, AR
+											</Typography>
+										</Grid>
+									</Grid>
+								</CardContent>
+								<CardActions sx={{ justifyContent: 'space-evenly' }}>
+									<Link
+										href='http://www.perfection-plus.com/'
+										target='_blank'
+										rel='noopener'
+										underline='none'
+									>
+										<Button size='small'>Website</Button>
+									</Link>
+									<Link
+										href='https://www.facebook.com/people/Perfection-Plus/100063736413093/'
+										target='_blank'
+										rel='noopener'
+										underline='none'
+									>
+										<Button size='small'>Facebook</Button>
+									</Link>
+								</CardActions>
+							</Card>
+						</Grid>
+					</Grid>
 				</Grid>
 			</Grid>
 		</>
