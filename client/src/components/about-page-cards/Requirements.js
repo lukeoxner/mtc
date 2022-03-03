@@ -8,11 +8,7 @@ import {
 	Typography,
 	Link,
 } from '@material-ui/core';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import PerfectionPlusLogo from '../../images/perfection-plus-logo.jpeg';
+import PPBusinessCard from '../PPBusinessCard';
 
 const useStyles = makeStyles((theme) => ({
 	heading: {
@@ -32,21 +28,6 @@ const useStyles = makeStyles((theme) => ({
 	inspectionAdContainer: {
 		marginTop: '35px',
 		marginBottom: '50px',
-	},
-	perfectionPlusLogoContainer: {
-		marginTop: '15px',
-		marginBottom: '50px',
-		// height: '200px',
-	},
-	perfectionPlusLogo: {
-		display: 'block',
-		marginLeft: 'auto',
-		marginRight: 'auto',
-		height: '80px',
-		width: '310px',
-	},
-	address: {
-		textAlign: 'end',
 	},
 }));
 
@@ -110,7 +91,7 @@ function Requirements() {
 						justifyContent='space-between'
 						className={classes.inspectionAdContainer}
 					>
-						<Grid item xs={10} md={6}>
+						<Grid item xs={12} md={6}>
 							<Typography>
 								We recommend having this inspection performed by Perfection Plus
 								- the official provider of maintenance, repair, and race prep
@@ -120,51 +101,8 @@ function Requirements() {
 								for nearly two decades.
 							</Typography>
 						</Grid>
-
-						<Grid item xs={8} md={5}>
-							<Card sx={{ marginBottom: '20px' }}>
-								<CardMedia
-									component='img'
-									height='70'
-									image={PerfectionPlusLogo}
-									alt='perfection plus logo'
-								/>
-								<CardContent>
-									<Grid container direction='row'>
-										<Grid item xs={6}>
-											<Typography variant='h6' color='text.secondary'>
-												501-565-1911
-											</Typography>
-										</Grid>
-										<Grid item xs={6} align='center'>
-											<Typography variant='body2' color='text.secondary'>
-												9 Trigon Place
-											</Typography>
-											<Typography variant='body2' color='text.secondary'>
-												Little Rock, AR
-											</Typography>
-										</Grid>
-									</Grid>
-								</CardContent>
-								<CardActions sx={{ justifyContent: 'space-evenly' }}>
-									<Link
-										href='http://www.perfection-plus.com/'
-										target='_blank'
-										rel='noopener'
-										underline='none'
-									>
-										<Button size='small'>Website</Button>
-									</Link>
-									<Link
-										href='https://www.facebook.com/people/Perfection-Plus/100063736413093/'
-										target='_blank'
-										rel='noopener'
-										underline='none'
-									>
-										<Button size='small'>Facebook</Button>
-									</Link>
-								</CardActions>
-							</Card>
+						<Grid item xs={10} md={5}>
+							<PPBusinessCard />
 						</Grid>
 					</Grid>
 				</Grid>
