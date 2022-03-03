@@ -51,7 +51,7 @@ function Requirements() {
 				</Grid>
 				<Grid item sm={10} md={10}>
 					<Typography variant='h5' className={classes.subHeading}>
-						Driver
+						Driver Essentials
 					</Typography>
 					<Typography>
 						Whether you're a professional racing driver, or a complete beginner
@@ -64,12 +64,12 @@ function Requirements() {
 						We try to keep things simple in terms of driver gear. You'll just
 						need a long sleeve cotton shirt, full length cotton pants, closed
 						toe shoes, and a helmet with a Snell rating of SA2015 or higher.
-						Motorcycle helmets are not allowed. If you don't have a SA2015-rated
+						Motorcycle helmets are not allowed. If you don't have a SA2015 rated
 						helmet, you can rent one for $25/day.
 					</Typography>
 					<br />
 					<Typography variant='h5' className={classes.subHeading}>
-						Car
+						Car Requirements
 					</Typography>
 					<Typography>
 						Almost all street legal cars are eligible to participate in our
