@@ -17,40 +17,46 @@ import PerfectionPlusLogo from '../images/perfection-plus-logo.jpeg';
 function PPBusinessCard() {
 	return (
 		<>
-			<Card sx={{ marginBottom: '20px' }}>
+			<Card>
 				<CardMedia
 					component='img'
-					height='70'
+					height='60'
 					image={PerfectionPlusLogo}
 					alt='perfection plus logo'
 				/>
-				<CardContent>
+				<CardContent
+					sx={{ paddingBottom: '5px !important', paddingTop: '5px' }}
+				>
+					<Typography variant='h6' color='textPrimary' align='center'>
+						Rick McPherson
+					</Typography>
+					<br />
 					<Grid container direction='row'>
-						<Grid item xs={6}>
-							<Typography variant='h6' color='text.secondary'>
+						<Grid item xs={8}>
+							<Typography variant='subtitle2' color='textPrimary'>
 								501-565-1911
 							</Typography>
+							<Link
+								href='http://www.perfection-plus.com/'
+								target='_blank'
+								rel='noopener'
+								color='inherit'
+							>
+								<Typography variant='subtitle2' color='textPrimary'>
+									Perfection-Plus.com
+								</Typography>
+							</Link>
 						</Grid>
-						<Grid item xs={6} align='center'>
-							<Typography variant='body2' color='text.secondary'>
+						<Grid item xs={4} align='center'>
+							<Typography variant='subtitle2' color='textPrimary'>
 								9 Trigon Place
 							</Typography>
-							<Typography variant='body2' color='text.secondary'>
+							<Typography variant='subtitle2' color='textPrimary'>
 								Little Rock, AR
 							</Typography>
 						</Grid>
 					</Grid>
 				</CardContent>
-				<CardActions sx={{ justifyContent: 'space-evenly' }}>
-					<Link
-						href='http://www.perfection-plus.com/'
-						target='_blank'
-						rel='noopener'
-						underline='none'
-					>
-						<Typography variant='body2'>www.perfection-plus.com</Typography>
-					</Link>
-				</CardActions>
 			</Card>
 		</>
 	);
