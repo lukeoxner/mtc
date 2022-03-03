@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
 		'& .MuiTypography-h6': {
 			lineHeight: '2.5 !important',
 		},
+		width: '310px',
 	},
 }));
 

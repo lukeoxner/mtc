@@ -28,6 +28,14 @@ const useStyles = makeStyles((theme) => ({
 	inspectionAdContainer: {
 		marginTop: '35px',
 		marginBottom: '50px',
+		[theme.breakpoints.down('sm')]: {
+			justifyContent: 'center',
+		},
+	},
+	bizCardContainer: {
+		[theme.breakpoints.down('sm')]: {
+			marginTop: '30px',
+		},
 	},
 }));
 
@@ -41,12 +49,6 @@ function Requirements() {
 				<Grid item xs={10} className={classes.heading}>
 					<Typography variant='h4'>Track Day Requirements</Typography>
 				</Grid>
-				{/* <Grid item xs={10} className={classes.heading}>
-					<Typography>
-						Here are the essentials you'll need to participate in a track day
-						with McPherson Track Center.
-					</Typography>
-				</Grid> */}
 				<Grid item sm={10} md={10}>
 					<Typography variant='h5' className={classes.subHeading}>
 						Driver
@@ -101,7 +103,7 @@ function Requirements() {
 								for nearly two decades.
 							</Typography>
 						</Grid>
-						<Grid item xs={10} md={5}>
+						<Grid item xs={10} md={5} className={classes.bizCardContainer}>
 							<PPBusinessCard />
 						</Grid>
 					</Grid>

@@ -80,8 +80,6 @@ const useStyles = makeStyles((theme) => ({
 			color: '#000',
 			boxShadow: 'none',
 			borderColor: '#cf0c0c',
-			// boxShadow: '0 0 0 0.2rem rgba(0,0,0,.5)',
-			// borderWidth: '2.0px',
 		},
 		'&:focus': {
 			// boxShadow: '0 0 0 0.4rem rgba(0,123,255,.5)',
