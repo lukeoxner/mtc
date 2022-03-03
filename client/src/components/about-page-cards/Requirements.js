@@ -82,8 +82,8 @@ function Requirements() {
 					<Typography>
 						The most important thing is that your car is well maintained and in
 						good, safe running order. It's best to have a thorough inspection
-						performed by a mechanic experienced with race cars and high
-						performance driving events.
+						performed by a mechanic experienced with high performance driving
+						events.
 					</Typography>
 					<Grid
 						container

@@ -14,10 +14,21 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import PerfectionPlusLogo from '../images/perfection-plus-logo.jpeg';
 
+const useStyles = makeStyles((theme) => ({
+	root: {
+		'& .MuiTypography-h6': {
+			lineHeight: '2.5 !important',
+		},
+	},
+}));
+
 function PPBusinessCard() {
+	const classes = useStyles();
+	const theme = useTheme();
+
 	return (
 		<>
-			<Card>
+			<Card className={classes.root}>
 				<CardMedia
 					component='img'
 					height='60'
@@ -30,7 +41,6 @@ function PPBusinessCard() {
 					<Typography variant='h6' color='textPrimary' align='center'>
 						Rick McPherson
 					</Typography>
-					<br />
 					<Grid container direction='row'>
 						<Grid item xs={8}>
 							<Typography variant='subtitle2' color='textPrimary'>
