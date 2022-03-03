@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 		position: 'relative',
 		backgroundColor: '#fff',
 		width: '100',
-		height: '100vh',
+		// height: '100vh',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
 		backgroundPosition: 'center center',

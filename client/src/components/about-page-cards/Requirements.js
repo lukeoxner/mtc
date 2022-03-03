@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: '14px',
 		fontStyle: 'italic',
 	},
-	perfectionPlusContainer: {
+	perfectionPlusLogoContainer: {
 		marginTop: '15px',
 		marginBottom: '50px',
 		// height: '200px',
@@ -51,12 +51,12 @@ function Requirements() {
 				<Grid item xs={10} className={classes.heading}>
 					<Typography variant='h4'>Track Day Requirements</Typography>
 				</Grid>
-				<Grid item xs={10} className={classes.heading}>
+				{/* <Grid item xs={10} className={classes.heading}>
 					<Typography>
 						Here are the essentials you'll need to participate in a track day
 						with McPherson Track Center.
 					</Typography>
-				</Grid>
+				</Grid> */}
 				<Grid item sm={10} md={10}>
 					<Typography variant='h5' className={classes.subHeading}>
 						Driver
@@ -97,22 +97,23 @@ function Requirements() {
 						performed by Perfection Plus - the official provider of maintenance,
 						repair, and race prep for McPherson Track Center.
 					</Typography>
+					<br />
 				</Grid>
 				<Grid
 					item
 					xs={10}
 					md={5}
 					justifyContent='center'
-					className={classes.perfectionPlusContainer}
+					className={classes.perfectionPlusLogoContainer}
 				>
 					<img src={PerfectionPlusLogo} class={classes.perfectionPlusLogo} />
 				</Grid>
-				<Grid item xs={10} md={2}>
+				<Grid item xs={5} md={2}>
 					<br />
 					<Typography variant='h6'>Perfection Plus</Typography>
 					<Typography variant='h6'>501-565-1911</Typography>
 				</Grid>
-				<Grid item xs={10} md={2} className={classes.address}>
+				<Grid item xs={5} md={2} className={classes.address}>
 					<br />
 					<Typography variant='h6'>9 Trigon Place</Typography>
 					<Typography variant='h6'>Little Rock, AR</Typography>
