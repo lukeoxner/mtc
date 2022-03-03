@@ -37,6 +37,10 @@ const useStyles = makeStyles((theme) => ({
 			marginTop: '30px',
 		},
 	},
+	callToAction: {
+		fontWeight: 500,
+		// fontStyle: 'italic',
+	},
 }));
 
 function Requirements() {
@@ -54,16 +58,16 @@ function Requirements() {
 						Driver Essentials
 					</Typography>
 					<Typography>
-						Whether you're a professional racing driver, or a complete beginner
-						to high performance driving - we welcome drivers of all experience
-						levels. If you are at least 18 years old, have a valid driver's
-						license, and a good attitude - our track events are for you!
+						From seasoned track day veterans, to complete beginners - we welcome
+						drivers of all experience levels. If you are at least 18 years old,
+						have a valid driver's license, and a good attitude - our track
+						events are for you!
 					</Typography>
 					<br />
 					<Typography>
-						We try to keep things simple in terms of driver gear. You'll just
-						need a long sleeve cotton shirt, full length cotton pants, closed
-						toe shoes, and a helmet with a Snell rating of SA2015 or higher.
+						We also keep things simple in terms of driver gear. You'll just need
+						a long sleeve cotton shirt, full length cotton pants, closed toe
+						shoes, and a helmet with a Snell rating of SA2015 or higher.
 						Motorcycle helmets are not allowed. If you don't have a SA2015 rated
 						helmet, you can rent one for $25/day.
 					</Typography>
@@ -95,12 +99,15 @@ function Requirements() {
 					>
 						<Grid item xs={12} md={6}>
 							<Typography>
-								We recommend having this inspection performed by Perfection Plus
-								- the official provider of maintenance, repair, and race prep
-								for McPherson Track Center. Operated by father / son duo Steve
-								and Rick McPherson, Perfection Plus has been Arkansas' premier
-								independent service facility for Porsche&reg; and other exotics
-								for nearly two decades.
+								<span className={classes.callToAction}>
+									We recommend having this inspection performed by Perfection
+									Plus - the official provider of maintenance, repair, and race
+									prep for McPherson Track Center.{' '}
+								</span>{' '}
+								Operated by father / son duo Steve and Rick McPherson,
+								Perfection Plus has been Arkansas' premier independent service
+								facility for Porsche&reg; and other exotics for nearly two
+								decades.
 							</Typography>
 						</Grid>
 						<Grid item xs={10} md={5} className={classes.bizCardContainer}>

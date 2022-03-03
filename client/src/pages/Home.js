@@ -69,6 +69,19 @@ const useStyles = makeStyles((theme) => ({
 			fontSize: '2.5rem',
 		},
 	},
+	hpde: {
+		fontSize: '1.5rem',
+		fontWeight: '600',
+		fontStyle: 'italic',
+		textShadow: '2px 2px #000000',
+		textAlign: 'center',
+		[theme.breakpoints.down('sm')]: {
+			fontSize: '1.5rem',
+		},
+		[theme.breakpoints.between('sm', 'md')]: {
+			fontSize: '1.9rem',
+		},
+	},
 	button: {
 		backgroundColor: 'rgba(0,0,0,0.5)',
 		borderColor: '#8f0707',
@@ -123,6 +136,11 @@ function Home() {
 								<Grid item xs={12}>
 									<Typography className={classes.mtc}>
 										McPherson Track Center
+									</Typography>
+								</Grid>
+								<Grid item xs={12}>
+									<Typography className={classes.hpde}>
+										High Performance Driving Events
 									</Typography>
 								</Grid>
 								<Grid item xs={12}>
