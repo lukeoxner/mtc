@@ -11,11 +11,14 @@ import {
 import VideoBlock from '../resource-blocks/VideoBlock';
 
 const useStyles = makeStyles((theme) => ({
+	resourceGridItem: {
+		marginBottom: '15px',
+	},
 	subHeading: {
 		marginBottom: '10px',
 	},
 	link: {
-		// marginLeft: '30px',
+		marginLeft: '30px',
 		// marginBottom: '15px',
 	},
 	resource: {
@@ -35,9 +38,13 @@ function Ebooks() {
 						eBooks
 					</Typography>
 				</Grid>
-				<Typography className={classes.resource}>
-					{' '}
-					- HPDE First Timer's Guide by Ross Bentley
+				<Grid item xs={12} md={6}>
+					<Typography className={classes.resource}>
+						{' '}
+						- HPDE First Timer's Guide by Ross Bentley
+					</Typography>
+				</Grid>
+				<Grid item xs={12} md={6} className={classes.resourceGridItem}>
 					<Link
 						href='https://bit.ly/3vKT7Jk'
 						target='_blank'
@@ -47,11 +54,15 @@ function Ebooks() {
 						className={classes.link}
 					>
 						https://bit.ly/3vKT7Jk
-					</Link>
-				</Typography>
-				<Typography className={classes.resource}>
-					{' '}
-					- How to Learn a Track...FAST! by Ross Bentley
+					</Link>{' '}
+				</Grid>
+				<Grid item xs={12} md={6}>
+					<Typography className={classes.resource}>
+						{' '}
+						- How to Learn Tracks FAST by Ross Bentley
+					</Typography>
+				</Grid>
+				<Grid item xs={12} md={6} className={classes.resourceGridItem}>
 					<Link
 						href='https://bit.ly/3HOWuBC'
 						target='_blank'
@@ -61,22 +72,8 @@ function Ebooks() {
 						className={classes.link}
 					>
 						https://bit.ly/3HOWuBC
-					</Link>
-				</Typography>
-				<Typography className={classes.resource}>
-					{' '}
-					- Understeer vs Oversteer + how to respond
-					<Link
-						href='https://youtu.be/m5xn36CHkN0'
-						target='_blank'
-						rel='noopener'
-						color='inherit'
-						underline='always'
-						className={classes.link}
-					>
-						https://youtu.be/m5xn36CHkN0
-					</Link>
-				</Typography>
+					</Link>{' '}
+				</Grid>
 			</Grid>
 		</>
 	);

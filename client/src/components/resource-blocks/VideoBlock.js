@@ -92,10 +92,13 @@ function Videos() {
 						https://youtu.be/m5xn36CHkN0
 					</Link>{' '}
 				</Grid>
-
-				<Typography className={classes.resource}>
-					{' '}
-					- Should you turn traction control off?
+				<Grid item xs={12} md={6}>
+					<Typography className={classes.resource}>
+						{' '}
+						- Should you turn traction control off?
+					</Typography>
+				</Grid>
+				<Grid item xs={12} md={6} className={classes.resourceGridItem}>
 					<Link
 						href='https://youtu.be/rqT-t4YVhL4'
 						target='_blank'
@@ -105,11 +108,15 @@ function Videos() {
 						className={classes.link}
 					>
 						https://youtu.be/rqT-t4YVhL4
-					</Link>
-				</Typography>
-				<Typography className={classes.resource}>
-					{' '}
-					- How to pass other cars on track
+					</Link>{' '}
+				</Grid>
+				<Grid item xs={12} md={6}>
+					<Typography className={classes.resource}>
+						{' '}
+						- How to pass other cars on track
+					</Typography>
+				</Grid>
+				<Grid item xs={12} md={6} className={classes.resourceGridItem}>
 					<Link
 						href='https://youtu.be/KeMFannmtQY'
 						target='_blank'
@@ -119,11 +126,15 @@ function Videos() {
 						className={classes.link}
 					>
 						https://youtu.be/KeMFannmtQY
-					</Link>
-				</Typography>
-				<Typography className={classes.resource}>
-					{' '}
-					- Drive faster by 'Looking Ahead'
+					</Link>{' '}
+				</Grid>
+				<Grid item xs={12} md={6}>
+					<Typography className={classes.resource}>
+						{' '}
+						- Drive faster by 'Looking Ahead'
+					</Typography>
+				</Grid>
+				<Grid item xs={12} md={6} className={classes.resourceGridItem}>
 					<Link
 						href='https://youtu.be/_p63hxS6vl8'
 						target='_blank'
@@ -133,8 +144,8 @@ function Videos() {
 						className={classes.link}
 					>
 						https://youtu.be/_p63hxS6vl8
-					</Link>
-				</Typography>
+					</Link>{' '}
+				</Grid>
 			</Grid>
 		</>
 	);
