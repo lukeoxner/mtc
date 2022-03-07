@@ -40,7 +40,7 @@ function Videos() {
 				<Grid item xs={12} md={6}>
 					<Typography className={classes.resource}>
 						{' '}
-						- Onboard lap of Hallett (CCW)
+						- Hallett onboard lap with Luke Oxner
 					</Typography>
 				</Grid>
 				<Grid item xs={12} md={6} className={classes.resourceGridItem}>
@@ -112,7 +112,7 @@ function Videos() {
 				<Grid item xs={12} md={6}>
 					<Typography className={classes.resource}>
 						{' '}
-						- How to pass other cars on track
+						- Safely passing other cars on track
 					</Typography>
 				</Grid>
 				<Grid item xs={12} md={6} className={classes.resourceGridItem}>

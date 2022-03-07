@@ -26,9 +26,6 @@ function Introduction() {
 	return (
 		<>
 			<Grid container direction='row' justifyContent='center'>
-				{/* <Grid item xs={12} className={classes.heading}>
-					<Typography variant='h4'>Event Info</Typography>
-				</Grid> */}
 				<Grid item xs={10}>
 					<br />
 					<Typography variant='h6' fontStyle='italic'>
