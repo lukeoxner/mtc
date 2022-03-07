@@ -41,13 +41,13 @@ export default function BasicList() {
 		let cardName;
 		switch (index) {
 			case 0:
-				cardName = 'intro';
+				cardName = 'introduction';
 				break;
 			case 1:
-				cardName = 'eventInfo';
+				cardName = 'requirements';
 				break;
 			case 2:
-				cardName = 'requirements';
+				cardName = 'beginnerInfo';
 				break;
 			case 3:
 				cardName = 'tipsFAQ';
@@ -91,9 +91,9 @@ export default function BasicList() {
 										onClick={(event) => handleListItemClick(event, 1)}
 									>
 										<ListItemIcon>
-											<InfoIcon />
+											<CheckIcon />
 										</ListItemIcon>
-										<ListItemText primary='Event Info' />
+										<ListItemText primary='Requirements' />
 									</ListItemButton>
 								</ListItem>
 							</Grid>
@@ -104,9 +104,9 @@ export default function BasicList() {
 										onClick={(event) => handleListItemClick(event, 2)}
 									>
 										<ListItemIcon>
-											<CheckIcon />
+											<InfoIcon />
 										</ListItemIcon>
-										<ListItemText primary='Requirements' />
+										<ListItemText primary='Beginner Info' />
 									</ListItemButton>
 								</ListItem>
 							</Grid>

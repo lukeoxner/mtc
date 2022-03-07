@@ -11,7 +11,7 @@ import {
 const useStyles = makeStyles((theme) => ({
 	heading: {
 		textAlign: 'center',
-		marginBottom: '15px',
+		fontWeight: 500,
 	},
 	subHeading: {
 		textAlign: 'center',
@@ -26,15 +26,13 @@ function EventInfo() {
 	return (
 		<>
 			<Grid container direction='row' justifyContent='center'>
-				<Grid item xs={12} className={classes.heading}>
+				{/* <Grid item xs={12} className={classes.heading}>
 					<Typography variant='h4'>Event Info</Typography>
-				</Grid>
+				</Grid> */}
 				<Grid item xs={10}>
 					<br />
-					<Typography variant='h6' fontStyle='italic'>
-						McPherson Track Center events let you sharpen your driving skills
-						and push your high performance car to its limits, safely and
-						legally, on a real race track.
+					<Typography variant='h5' className={classes.heading}>
+						New to high performance driving? No problem!
 					</Typography>
 					<br />
 					<Typography>

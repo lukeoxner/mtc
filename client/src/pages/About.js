@@ -13,7 +13,7 @@ import AboutContext from '../utils/AboutContext';
 import MediaCard from '../components/MediaCard';
 import AboutNav from '../components/AboutNav';
 import IntroCard from '../components/about-page-cards/Intro';
-import EventInfoCard from '../components/about-page-cards/EventInfo';
+import BeginnerInfoCard from '../components/about-page-cards/BeginnerInfo';
 import RequirementsCard from '../components/about-page-cards/Requirements';
 import TipsFAQCard from '../components/about-page-cards/TipsFAQ';
 
@@ -102,12 +102,12 @@ function About() {
 							<Grid className={classes.gridSection} item sm={10} md={9}>
 								{(() => {
 									switch (card) {
-										case 'intro':
+										case 'introduction':
 											return <IntroCard />;
-										case 'eventInfo':
-											return <EventInfoCard />;
 										case 'requirements':
 											return <RequirementsCard />;
+										case 'beginnerInfo':
+											return <BeginnerInfoCard />;
 										case 'tipsFAQ':
 											return <TipsFAQCard />;
 										default:

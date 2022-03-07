@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
 		// textAlign: 'center',
 		marginTop: '15px',
 		marginBottom: '15px',
+		fontWeight: 500,
 	},
 	note: {
 		textIndent: '15px',
@@ -50,12 +51,12 @@ function Requirements() {
 	return (
 		<>
 			<Grid container direction='row' justifyContent='center'>
-				<Grid item xs={10} className={classes.heading}>
+				{/* <Grid item xs={10} className={classes.heading}>
 					<Typography variant='h4'>Event Requirements</Typography>
-				</Grid>
+				</Grid> */}
 				<Grid item sm={10} md={10}>
 					<Typography variant='h5' className={classes.subHeading}>
-						Driver Essentials
+						Driver Requirements
 					</Typography>
 					<Typography>
 						From seasoned track day veterans, to complete beginners - we welcome
