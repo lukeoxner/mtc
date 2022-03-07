@@ -51,7 +51,7 @@ function Requirements() {
 		<>
 			<Grid container direction='row' justifyContent='center'>
 				<Grid item xs={10} className={classes.heading}>
-					<Typography variant='h4'>Track Day Requirements</Typography>
+					<Typography variant='h4'>Event Requirements</Typography>
 				</Grid>
 				<Grid item sm={10} md={10}>
 					<Typography variant='h5' className={classes.subHeading}>
