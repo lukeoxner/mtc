@@ -52,6 +52,20 @@ function Resources() {
 					</Typography>
 					<Typography className={classes.resource}>
 						{' '}
+						- Onboard lap of Hallett (CCW)
+						<Link
+							href='https://youtu.be/E6GBDc7h_bw'
+							target='_blank'
+							rel='noopener'
+							color='inherit'
+							underline='always'
+							className={classes.link}
+						>
+							https://youtu.be/E6GBDc7h_bw
+						</Link>
+					</Typography>
+					<Typography className={classes.resource}>
+						{' '}
 						- The proper race track 'Driving Line'
 						<Link
 							href='https://youtu.be/2kY58DP6mPk'
@@ -66,6 +80,20 @@ function Resources() {
 					</Typography>
 					<Typography className={classes.resource}>
 						{' '}
+						- Understeer vs Oversteer + how to respond
+						<Link
+							href='https://youtu.be/m5xn36CHkN0'
+							target='_blank'
+							rel='noopener'
+							color='inherit'
+							underline='always'
+							className={classes.link}
+						>
+							https://youtu.be/m5xn36CHkN0
+						</Link>
+					</Typography>
+					<Typography className={classes.resource}>
+						{' '}
 						- Should you turn traction control off?
 						<Link
 							href='https://youtu.be/rqT-t4YVhL4'
@@ -76,6 +104,34 @@ function Resources() {
 							className={classes.link}
 						>
 							https://youtu.be/rqT-t4YVhL4
+						</Link>
+					</Typography>
+					<Typography className={classes.resource}>
+						{' '}
+						- How to pass other cars on track
+						<Link
+							href='https://youtu.be/KeMFannmtQY'
+							target='_blank'
+							rel='noopener'
+							color='inherit'
+							underline='always'
+							className={classes.link}
+						>
+							https://youtu.be/KeMFannmtQY
+						</Link>
+					</Typography>
+					<Typography className={classes.resource}>
+						{' '}
+						- Drive faster by 'Looking Ahead'
+						<Link
+							href='https://youtu.be/_p63hxS6vl8'
+							target='_blank'
+							rel='noopener'
+							color='inherit'
+							underline='always'
+							className={classes.link}
+						>
+							https://youtu.be/_p63hxS6vl8
 						</Link>
 					</Typography>
 				</Grid>
