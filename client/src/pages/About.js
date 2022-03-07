@@ -64,6 +64,9 @@ const useStyles = makeStyles((theme) => ({
 		},
 		paddingTop: '110px',
 	},
+	gridContainer: {
+		marginBottom: '50px',
+	},
 	gridSection: {
 		// padding: "20px",
 		color: '#444',
@@ -76,7 +79,7 @@ function About() {
 	const classes = useStyles();
 	const theme = useTheme();
 
-	const [card, setCard] = useState('intro');
+	const [card, setCard] = useState('introduction');
 
 	const handleCardChange = (newCard) => {
 		setCard(newCard);
@@ -94,7 +97,7 @@ function About() {
 							container
 							direction='row'
 							justifyContent='center'
-							// alignItems="center"
+							className={classes.gridContainer}
 						>
 							<Grid className={classes.gridSection} item sm={10} md={3}>
 								<AboutNav />

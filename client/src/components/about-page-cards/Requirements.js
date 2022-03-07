@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	inspectionAdContainer: {
 		marginTop: '35px',
-		marginBottom: '50px',
+		// marginBottom: '50px',
 		[theme.breakpoints.down('sm')]: {
 			justifyContent: 'center',
 		},
