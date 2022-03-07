@@ -34,13 +34,13 @@ function GeneralInfo() {
 			<Grid container direction='row'>
 				<Grid item xs={12}>
 					<Typography variant='h6' className={classes.subHeading}>
-						General Info
+						Infographics
 					</Typography>
 				</Grid>
 				<Grid item xs={12} md={6}>
 					<Typography className={classes.resource}>
 						{' '}
-						- Corner marshall flags and their meanings
+						- Corner marshal flags and their meanings
 					</Typography>
 				</Grid>
 				<Grid item xs={12} md={6} className={classes.resourceGridItem}>
