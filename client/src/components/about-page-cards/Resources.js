@@ -8,6 +8,7 @@ import {
 	Link,
 	Typography,
 } from '@material-ui/core';
+import GeneralBlock from '../resource-blocks/GeneralBlock';
 import VideoBlock from '../resource-blocks/VideoBlock';
 import EbookBlock from '../resource-blocks/EbookBlock';
 
@@ -49,6 +50,8 @@ function Resources() {
 						an experienced track day junkie who just want a little refresher -
 						there's something for you in this collection of driving resources.
 					</Typography>
+					<br />
+					<GeneralBlock />
 					<br />
 					<VideoBlock />
 					<br />

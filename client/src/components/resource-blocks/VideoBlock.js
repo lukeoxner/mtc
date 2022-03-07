@@ -8,7 +8,6 @@ import {
 	Link,
 	Typography,
 } from '@material-ui/core';
-import VideoBlock from '../resource-blocks/VideoBlock';
 
 const useStyles = makeStyles((theme) => ({
 	resourceGridItem: {
