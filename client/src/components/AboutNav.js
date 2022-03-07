@@ -18,6 +18,7 @@ import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import MapIcon from '@mui/icons-material/Map';
 import HelpIcon from '@mui/icons-material/Help';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import VideoIcon from '@mui/icons-material/OndemandVideo';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
 const useStyles = makeStyles((theme) => ({
@@ -47,7 +48,7 @@ export default function BasicList() {
 				cardName = 'requirements';
 				break;
 			case 2:
-				cardName = 'beginnerInfo';
+				cardName = 'resources';
 				break;
 			case 3:
 				cardName = 'tipsFAQ';
@@ -104,9 +105,9 @@ export default function BasicList() {
 										onClick={(event) => handleListItemClick(event, 2)}
 									>
 										<ListItemIcon>
-											<InfoIcon />
+											<VideoIcon />
 										</ListItemIcon>
-										<ListItemText primary='Beginner Info' />
+										<ListItemText primary='Resources' />
 									</ListItemButton>
 								</ListItem>
 							</Grid>

@@ -13,8 +13,8 @@ import AboutContext from '../utils/AboutContext';
 import MediaCard from '../components/MediaCard';
 import AboutNav from '../components/AboutNav';
 import IntroCard from '../components/about-page-cards/Intro';
-import BeginnerInfoCard from '../components/about-page-cards/BeginnerInfo';
 import RequirementsCard from '../components/about-page-cards/Requirements';
+import ResourcesCard from '../components/about-page-cards/Resources';
 import TipsFAQCard from '../components/about-page-cards/TipsFAQ';
 
 const useStyles = makeStyles((theme) => ({
@@ -106,8 +106,8 @@ function About() {
 											return <IntroCard />;
 										case 'requirements':
 											return <RequirementsCard />;
-										case 'beginnerInfo':
-											return <BeginnerInfoCard />;
+										case 'resources':
+											return <ResourcesCard />;
 										case 'tipsFAQ':
 											return <TipsFAQCard />;
 										default:
