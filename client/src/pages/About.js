@@ -7,7 +7,7 @@ import {
 	Grid,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import Background from '../images/two-cars-back.png';
+import Background from '../images/two-cars-back.jpg';
 import Typography from '@material-ui/core/Typography';
 import AboutContext from '../utils/AboutContext';
 import MediaCard from '../components/MediaCard';

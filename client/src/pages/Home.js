@@ -8,7 +8,7 @@ import {
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import BackgroundDesktop from '../images/gt4-background.jpg';
-import BackgroundMobile from '../images/mobile-landing.png';
+import BackgroundMobile from '../images/mobile-landing.jpg';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
