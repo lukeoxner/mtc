@@ -134,7 +134,23 @@ function TipsFAQ() {
 								session. Another method is to use an in-car GPS lap timer. There
 								are apps available for your smartphone such as Harry's Lap
 								Timer, but if you really want to get serious about improving
-								your lap times, we recommend purchasing an AiM Solo 2.
+								your lap times, we recommend purchasing the{' '}
+								<Link
+									href='https://winecountrymotorsports.com/product_info.php/products_id/2110'
+									target='_blank'
+									rel='noopener'
+									color='inherit'
+									underline='always'
+									className={classes.link}
+								>
+									AiM Solo2 DL GPS lap timer with RAM mount
+								</Link>
+								. This device will give you real-time feedback as you're
+								driving, comparing your current lap to your best lap, allowing
+								you to learn and make adjustments on the fly. The DL model
+								integrates with your car's OBD2 port so you can overlay engine
+								data with your lap data. If your car is older and lacks an OBD2
+								port, you can save money and buy the base model Solo2.
 							</Typography>
 						</Grid>
 					</Grid>

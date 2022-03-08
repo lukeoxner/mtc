@@ -35,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: '20px',
 		backgroundColor: `rgba(0,0,0,.0)`,
 		overflow: 'hidden',
+		[theme.breakpoints.down('sm')]: {
+			// marginTop: '0px',
+		},
 	},
 	hero: {
 		marginTop: '50px',
@@ -42,15 +45,14 @@ const useStyles = makeStyles((theme) => ({
 		// paddingTop: "50px",
 		height: '250px',
 		width: '100',
-		backgroundImage: `url(${Background})`,
 		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.3), rgba(000, 000, 000, 0.3)), url(${Background})`,
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
 		backgroundPosition: '50% 70%',
 		backgroundAttachment: 'relative',
 		[theme.breakpoints.down('sm')]: {
-			backgroundImage: 'none',
-			height: '10px',
+			// backgroundImage: 'none',
+			height: '100px',
 		},
 	},
 	heroText: {

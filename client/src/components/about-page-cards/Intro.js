@@ -17,12 +17,12 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: 'center',
 		marginTop: '15px',
 	},
-	left: {
+	large: {
 		[theme.breakpoints.down('sm')]: {
 			display: 'none',
 		},
 	},
-	above: {
+	small: {
 		display: 'none',
 		[theme.breakpoints.down('sm')]: {
 			display: 'inline',
@@ -42,7 +42,9 @@ function Introduction() {
 					<Typography variant='h6' fontStyle='italic'>
 						McPherson Track Center events allow you to sharpen your driving
 						skills and push your high performance car to its limits, safely and
-						legally, on a real race track.
+						legally, on{' '}
+						<span className={classes.large}>a real race track.</span>
+						<span className={classes.small}>the track.</span>
 					</Typography>
 					<br />
 					<Typography>
@@ -62,8 +64,8 @@ function Introduction() {
 					<br />
 					<Typography>
 						Learn more about our track events by clicking through the tabs{' '}
-						<span className={classes.left}>on the left.</span>
-						<span className={classes.above}>above.</span>
+						<span className={classes.large}>on the left.</span>
+						<span className={classes.small}>above.</span>
 					</Typography>
 				</Grid>
 			</Grid>
