@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	hero: {
 		textAlign: 'center',
+		margin: '10px',
 		[theme.breakpoints.down('sm')]: {
 			fontSize: '2.3rem',
 		},
@@ -47,7 +48,7 @@ function Schedule() {
 		<>
 			<div className={classes.mainDiv}>
 				<Container className={classes.root}>
-					<Typography variant='h2' className={classes.hero}>
+					<Typography variant='h3' className={classes.hero}>
 						Upcoming Events
 					</Typography>
 					<Grid

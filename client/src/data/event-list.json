@@ -1,0 +1,47 @@
+[
+    {
+        "id": 0,
+        "date": "March 14, 2022",
+        "track": "Hallett Motor Racing Circuit",
+        "cityState": "Tulsa, OK",
+        "cost": "$xxx",
+        "format": "5 run groups / 5 cars per run group / 20min sessions",
+        "description": "Come join us as we kick off our 2022 track season at Hallett! Spring track days offer cool weather that both you and your car will enjoy. Our track events feature nearly two hours of track time for each participant, complimentary catered lunch, and free use of Hallett's covered RacePort paddock areas. Space is limited as usual, so be sure to contact us soon to sign up and guarantee your spot!"
+    },
+    {
+        "id": 1,
+        "date": "May 16, 2022",
+        "track": "Hallett Motor Racing Circuit",
+        "cityState": "Tulsa, OK",
+        "cost": "$xxx",
+        "format": "5 run groups / 5 cars per run group / 20min sessions",
+        "description": "This is the second event of our 2022 track season! Our track events feature nearly two hours of track time for each participant, complimentary catered lunch, and free use of Hallett's covered RacePort paddock areas. Space is limited as usual, so be sure to contact us soon to sign up and guarantee your spot!"
+    },
+    {
+        "id": 2,
+        "date": "June 13, 2022",
+        "track": "Hallett Motor Racing Circuit",
+        "cityState": "Tulsa, OK",
+        "cost": "$xxx",
+        "format": "5 run groups / 5 cars per run group / 20min sessions",
+        "description": "Celebrate the beginning of summer with a track day at Hallett! Our track events feature nearly two hours of track time for each participant, complimentary catered lunch, and free use of Hallett's covered RacePort paddock areas. Space is limited as usual, so be sure to contact us soon to sign up and guarantee your spot!"
+    },
+    {
+        "id": 3,
+        "date": "July 18, 2022",
+        "track": "Hallett Motor Racing Circuit",
+        "cityState": "Tulsa, OK",
+        "cost": "$xxx",
+        "format": "5 run groups / 5 cars per run group / 20min sessions",
+        "description": "The days are long and the lap times are fast! Come beat the heat with some hot laps at Hallett. Our track events feature nearly two hours of track time for each participant, complimentary catered lunch, and free use of Hallett's covered RacePort paddock areas. Space is limited as usual, so be sure to contact us soon to sign up and guarantee your spot!"
+    },
+    {
+        "id": 4,
+        "date": "September 12, 2022",
+        "track": "Hallett Motor Racing Circuit",
+        "cityState": "Tulsa, OK",
+        "cost": "$xxx",
+        "format": "5 run groups / 5 cars per run group / 20min sessions",
+        "description": "Don't miss our last event of the season! September track days often produce some of the best driving conditions and fastest lap times, as the weather is cooling off and the track is more rubbered in. Our track events feature nearly two hours of track time for each participant, complimentary catered lunch, and free use of Hallett's covered RacePort paddock areas. Space is limited as usual, so be sure to contact us soon to sign up and guarantee your spot!"
+    },
+]

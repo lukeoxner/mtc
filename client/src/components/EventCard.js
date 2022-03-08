@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	cardContent: {
-		// margin: 20,
+		paddingBottom: '5px',
 		textAlign: 'center',
 	},
 	date: {
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'center',
 	},
 	button: {
-		marginBottom: '20px',
+		marginBottom: '10px',
 		color: '##ad0a0a',
 		borderColor: '#ad0a0a',
 	},
