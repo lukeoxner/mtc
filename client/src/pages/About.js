@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import Background from '../images/two-cars-back.jpg';
 import Typography from '@material-ui/core/Typography';
 import AboutContext from '../utils/AboutContext';
-import MediaCard from '../components/MediaCard';
+import MediaCard from '../components/EventCard';
 import AboutNav from '../components/AboutNav';
 import IntroCard from '../components/about-page-cards/Intro';
 import RequirementsCard from '../components/about-page-cards/Requirements';

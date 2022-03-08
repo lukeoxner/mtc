@@ -9,7 +9,7 @@ import {
 import { Link } from 'react-router-dom';
 import Background from '../images/group-edit.jpg';
 import Typography from '@material-ui/core/Typography';
-import MediaCard from '../components/MediaCard';
+import EventCard from '../components/EventCard';
 
 const useStyles = makeStyles((theme) => ({
 	mainDiv: {
@@ -56,20 +56,20 @@ function Schedule() {
 						justifyContent='center'
 						alignItems='center'
 					>
-						<Grid item sm={8} lg={6}>
-							<MediaCard date='March 14, 2022' />
+						<Grid item sm={10} lg={8}>
+							<EventCard date='March 14, 2022' />
 						</Grid>
-						<Grid item sm={8} lg={6}>
-							<MediaCard date='May 16, 2022' />
+						<Grid item sm={10} lg={8}>
+							<EventCard date='May 16, 2022' />
 						</Grid>
-						<Grid item sm={8} lg={6}>
-							<MediaCard date='June 13, 2022' />
+						<Grid item sm={10} lg={8}>
+							<EventCard date='June 13, 2022' />
 						</Grid>
-						<Grid item sm={8} lg={6}>
-							<MediaCard date='July 18, 2022' />
+						<Grid item sm={10} lg={8}>
+							<EventCard date='July 18, 2022' />
 						</Grid>
-						<Grid item sm={8} lg={6}>
-							<MediaCard date='September 12, 2022' />
+						<Grid item sm={10} lg={8}>
+							<EventCard date='September 12, 2022' />
 						</Grid>
 					</Grid>
 				</Container>
