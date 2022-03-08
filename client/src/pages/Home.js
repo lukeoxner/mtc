@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: '200px',
 		[theme.breakpoints.down('sm')]: {
 			// small version stuff here
+			marginTop: '170px',
 		},
 	},
 	grid: {
@@ -53,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
 			fontSize: '1.5rem',
 		},
 		[theme.breakpoints.between('sm', 'md')]: {
-			fontSize: '1.9rem',
+			fontSize: '1.7rem',
 		},
 	},
 	mtc: {
@@ -76,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
 		textShadow: '2px 2px #000000',
 		textAlign: 'center',
 		[theme.breakpoints.down('sm')]: {
-			fontSize: '1.5rem',
+			fontSize: '1.2rem',
 		},
 		[theme.breakpoints.between('sm', 'md')]: {
 			fontSize: '1.9rem',
@@ -98,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
 			// boxShadow: '0 0 0 0.4rem rgba(0,123,255,.5)',
 		},
 		[theme.breakpoints.down('sm')]: {
-			marginTop: '400px',
+			marginTop: '320px',
 			backgroundColor: 'rgba(0,0,0,0.7)',
 		},
 	},
