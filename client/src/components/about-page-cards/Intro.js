@@ -17,6 +17,17 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: 'center',
 		marginTop: '15px',
 	},
+	left: {
+		[theme.breakpoints.down('sm')]: {
+			display: 'none',
+		},
+	},
+	above: {
+		display: 'none',
+		[theme.breakpoints.down('sm')]: {
+			display: 'inline',
+		},
+	},
 }));
 
 function Introduction() {
@@ -41,6 +52,18 @@ function Introduction() {
 						time. This allows our drivers to focus on having fun and improving
 						their lap times, rather than being stuck behind slower cars for most
 						of the session.
+					</Typography>
+					<br />
+					<Typography>
+						In addition to tons of quality track time, we host a welcome dinner
+						at a local steakhouse the evening before, and provide a
+						complimentary catered lunch during the event as well.
+					</Typography>
+					<br />
+					<Typography>
+						Learn more about our track events by clicking through the tabs{' '}
+						<span className={classes.left}>on the left.</span>
+						<span className={classes.above}>above.</span>
 					</Typography>
 				</Grid>
 			</Grid>
