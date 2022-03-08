@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import Background from '../images/group-edit.jpg';
 import Typography from '@material-ui/core/Typography';
 import EventCard from '../components/EventCard';
+import EventsData from '../data/event-list.json';
 
 const useStyles = makeStyles((theme) => ({
 	mainDiv: {
@@ -57,21 +58,22 @@ function Schedule() {
 						justifyContent='center'
 						alignItems='center'
 					>
-						<Grid item sm={10} lg={8}>
-							<EventCard date='March 14, 2022' />
-						</Grid>
-						<Grid item sm={10} lg={8}>
-							<EventCard date='May 16, 2022' />
-						</Grid>
-						<Grid item sm={10} lg={8}>
-							<EventCard date='June 13, 2022' />
-						</Grid>
-						<Grid item sm={10} lg={8}>
-							<EventCard date='July 18, 2022' />
-						</Grid>
-						<Grid item sm={10} lg={8}>
-							<EventCard date='September 12, 2022' />
-						</Grid>
+						{EventsData
+							? EventsData.map((event) => (
+									<Grid item sm={10} lg={8} key={event.id}>
+										<EventCard
+											id={event.id}
+											key={event.id}
+											date={event.date}
+											track={event.track}
+											cityState={event.cityState}
+											cost={event.cost}
+											format={event.format}
+											description={event.description}
+										/>
+									</Grid>
+							  ))
+							: console.log('No results')}
 					</Grid>
 				</Container>
 			</div>

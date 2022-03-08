@@ -13,8 +13,10 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
 	root: {
 		maxWidth: 800,
+		height: '100%',
 		justifyContent: 'center',
-		margin: 'auto',
+		margin: '5px',
+		padding: '10px',
 		// marginBottom: 20,
 		[theme.breakpoints.down('sm')]: {
 			marginTop: '40px',
@@ -144,15 +146,13 @@ export default function MediaCard() {
 						</a>
 					</Typography>
 				</Grid>
+				<Grid item sm={10}>
+					<Typography className={classes.eventInfo} style={{ marginTop: 0 }}>
+						<span style={{ fontWeight: 400 }}>How to Register:</span> Call Rick
+						at 501-565-1911
+					</Typography>
+				</Grid>
 			</Grid>
-
-			<CardActions className={classes.cardActions}>
-				<Button className={classes.button} size='medium' variant='outlined'>
-					<Link className={classes.link} to='/event'>
-						Learn More
-					</Link>
-				</Button>
-			</CardActions>
 		</Card>
 	);
 }

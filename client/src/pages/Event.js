@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 	mainDiv: {
 		position: 'relative',
 		width: '100',
-		height: '100vh',
+		// height: '100vh',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
 		backgroundPosition: 'center center',
@@ -23,7 +23,8 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		minWidth: 275,
 		maxHeight: '100',
-		marginTop: '7%',
+		marginTop: '100px',
+		marginBottom: '100px',
 		backgroundColor: `rgba(0,0,0,.0)`,
 		color: 'white',
 		overflow: 'hidden',

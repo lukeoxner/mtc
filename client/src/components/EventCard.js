@@ -86,7 +86,7 @@ export default function MediaCard(props) {
 							{props.date}
 						</Typography>
 						<Typography gutterBottom className={classes.trackName}>
-							Hallett Motor Racing Circuit - Tulsa, OK
+							{props.track} - {props.cityState}
 						</Typography>
 					</CardContent>
 
