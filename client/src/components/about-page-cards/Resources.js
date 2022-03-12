@@ -43,9 +43,9 @@ function Resources() {
 					</Typography>
 					<br />
 					<Typography>
-						Whether you're newcomer to the world of high performance driving, or
-						an experienced track day junkie who just wants a little refresher -
-						there's something for you in this collection of driving resources.
+						Whether you're a newcomer to the world of high performance driving,
+						or an experienced track day junkie who just wants a little refresher
+						- there's something for you in this collection of driving resources.
 					</Typography>
 					<br />
 					<GeneralBlock />

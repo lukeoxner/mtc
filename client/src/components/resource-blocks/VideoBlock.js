@@ -94,24 +94,6 @@ function Videos() {
 				<Grid item xs={12} md={6}>
 					<Typography className={classes.resource}>
 						{' '}
-						- Should you turn traction control off?
-					</Typography>
-				</Grid>
-				<Grid item xs={12} md={6} className={classes.resourceGridItem}>
-					<Link
-						href='https://youtu.be/rqT-t4YVhL4'
-						target='_blank'
-						rel='noopener'
-						color='inherit'
-						underline='always'
-						className={classes.link}
-					>
-						https://youtu.be/rqT-t4YVhL4
-					</Link>{' '}
-				</Grid>
-				<Grid item xs={12} md={6}>
-					<Typography className={classes.resource}>
-						{' '}
 						- Safely passing other cars on track
 					</Typography>
 				</Grid>
