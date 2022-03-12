@@ -49,7 +49,7 @@ function Introduction() {
 					<br />
 					<Typography>
 						Our ultimate goal is to give you as much quality track time as
-						possible. To that end, we limit these exclusive events to only 25
+						possible. To that end, we limit these exclusive events to only 20
 						participants, which results in no more than 5 cars on track at a
 						time. This allows our drivers to focus on having fun and improving
 						their lap times, rather than being stuck behind slower cars for most
@@ -58,7 +58,7 @@ function Introduction() {
 					<br />
 					<Typography>
 						In addition to tons of quality track time, we host a welcome dinner
-						at a local steakhouse the evening before, and provide a
+						at a local restaurant the evening before, and provide a
 						complimentary catered lunch during the event as well.
 					</Typography>
 					<br />
