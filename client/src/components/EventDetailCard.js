@@ -83,9 +83,9 @@ export default function MediaCard() {
 					/>
 				</Grid>
 				<Grid className={classes.cardContent} item sm={4} lg={6}>
-					<Typography gutterBottom className={classes.date}>
+					{/* <Typography gutterBottom className={classes.date}>
 						September 13, 2021
-					</Typography>
+					</Typography> */}
 					<Typography gutterBottom className={classes.trackName}>
 						Hallett Motor Racing Circuit
 					</Typography>
@@ -94,13 +94,11 @@ export default function MediaCard() {
 					</Typography>
 				</Grid>
 				<Typography className={classes.eventInfo}>
-					Come join us for another fun track day at Hallett! September track
-					days often produce some of the best driving conditions and fastest lap
-					times, as the weather is cooling off and the track is more rubbered
-					in. Our track events feature nearly two hours of track time for each
-					participant, complimentary catered lunch, and free use of Hallett's
-					covered RacePort paddock areas. Space is limited as usual, so be sure
-					to contact us soon to sign up and guarantee your spot!
+					Come join us for another fun track day at Hallett! Our track events
+					feature nearly two hours of track time for each participant,
+					complimentary catered lunch, and free use of Hallett's covered
+					RacePort paddock areas. Space is limited as usual, so be sure to
+					contact us soon to sign up and guarantee your spot!
 				</Typography>
 				<br />
 				<Grid item sm={10}>
@@ -110,7 +108,7 @@ export default function MediaCard() {
 				</Grid>
 				<Grid item sm={10}>
 					<Typography className={classes.eventInfo} style={{ marginTop: 15 }}>
-						<span style={{ fontWeight: 400 }}>Format:</span> 5 run groups / 5
+						<span style={{ fontWeight: 400 }}>Format:</span> 4 run groups / 5
 						cars per run group / 20min sessions
 					</Typography>
 				</Grid>
