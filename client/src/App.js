@@ -32,7 +32,7 @@ function App() {
 						<Route exact path='/schedule'>
 							<Schedule />
 						</Route>
-						<Route exact path='/event'>
+						<Route exact path='/event/*'>
 							<Event />
 						</Route>
 						<Route exact path='*' component={Home} />

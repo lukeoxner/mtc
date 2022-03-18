@@ -92,7 +92,7 @@ export default function MediaCard(props) {
 
 					<CardActions className={classes.cardActions}>
 						<Button className={classes.button} size='medium' variant='outlined'>
-							<Link className={classes.link} to='/event'>
+							<Link className={classes.link} to={`/event/${props.id}`}>
 								Event Details
 							</Link>
 						</Button>

@@ -46,6 +46,9 @@ function Event() {
 	const classes = useStyles();
 	const theme = useTheme();
 
+	console.log(window.location.href);
+	let fullUrl = window.location.pathname;
+
 	return (
 		<>
 			<div className={classes.mainDiv}>
@@ -57,7 +60,7 @@ function Event() {
 						alignItems='center'
 					>
 						<Grid item sm={10} lg={8}>
-							<EventDetailCard />
+							<EventDetailCard eventId={'01'} />
 						</Grid>
 					</Grid>
 				</Container>
