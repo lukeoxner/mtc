@@ -12,13 +12,14 @@ import EventDetailCard from '../components/EventDetailCard';
 const useStyles = makeStyles((theme) => ({
 	mainDiv: {
 		position: 'relative',
+		backgroundColor: '#292929',
 		width: '100',
 		// height: '100vh',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
 		backgroundPosition: 'center center',
 		backgroundAttachment: 'fixed',
-		// overflow: "hidden",
+		overflow: 'hidden',
 	},
 	root: {
 		minWidth: 275,
@@ -46,8 +47,10 @@ function Event() {
 	const classes = useStyles();
 	const theme = useTheme();
 
-	console.log(window.location.href);
-	let fullUrl = window.location.pathname;
+	// Get event id from url
+	let eventId = window.location.pathname.split('/').filter(Boolean).pop();
+
+	console.log(eventId);
 
 	return (
 		<>
@@ -60,7 +63,7 @@ function Event() {
 						alignItems='center'
 					>
 						<Grid item sm={10} lg={8}>
-							<EventDetailCard eventId={'01'} />
+							<EventDetailCard eventId={eventId} />
 						</Grid>
 					</Grid>
 				</Container>

@@ -32,6 +32,9 @@ function App() {
 						<Route exact path='/schedule'>
 							<Schedule />
 						</Route>
+						<Route exact path='/event'>
+							<Schedule />
+						</Route>
 						<Route exact path='/event/*'>
 							<Event />
 						</Route>
