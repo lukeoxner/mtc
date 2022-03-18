@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mtc/static/css/main.e6c13ad2.css",
+    "main.js": "/mtc/static/js/main.5d2ec500.js",
+    "static/js/787.b6eecdc1.chunk.js": "/mtc/static/js/787.b6eecdc1.chunk.js",
+    "static/media/group-edit.jpg": "/mtc/static/media/group-edit.572096e5887f81d44efb.jpg",
+    "static/media/gt4-background.jpg": "/mtc/static/media/gt4-background.d3209051d3c466c0538e.jpg",
+    "static/media/mobile-landing.jpg": "/mtc/static/media/mobile-landing.9cb14ef734240fa65fd1.jpg",
+    "static/media/two-cars-back.jpg": "/mtc/static/media/two-cars-back.2c1028ef97863f919e35.jpg",
+    "static/media/mtc-logo.png": "/mtc/static/media/mtc-logo.1fdb7acb8f6e8291dcf3.png",
+    "static/media/perfection-plus-logo.jpeg": "/mtc/static/media/perfection-plus-logo.50769334e1703789a0ae.jpeg",
+    "index.html": "/mtc/index.html",
+    "main.e6c13ad2.css.map": "/mtc/static/css/main.e6c13ad2.css.map",
+    "main.5d2ec500.js.map": "/mtc/static/js/main.5d2ec500.js.map",
+    "787.b6eecdc1.chunk.js.map": "/mtc/static/js/787.b6eecdc1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.5d2ec500.js"
+  ]
+}
