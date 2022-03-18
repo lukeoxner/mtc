@@ -134,7 +134,8 @@ function TipsFAQ() {
 								session. Another method is to use an in-car GPS lap timer. There
 								are apps available for your smartphone such as Harry's Lap
 								Timer, but if you really want to get serious about improving
-								your lap times, we recommend purchasing the{' '}
+								your lap times, we recommend purchasing a dedicated GPS lap
+								timer device. One of the most popular options is the{' '}
 								<Link
 									href='https://winecountrymotorsports.com/product_info.php/products_id/2110'
 									target='_blank'
@@ -150,7 +151,20 @@ function TipsFAQ() {
 								you to learn and make adjustments on the fly. The DL model
 								integrates with your car's OBD2 port so you can overlay engine
 								data with your lap data. If your car is older and lacks an OBD2
-								port, you can save money and buy the base model Solo2.
+								port, you can save money and buy the base model Solo2. Another
+								new option is the{' '}
+								<Link
+									href='https://discover.garmin.com/en-US/catalyst/'
+									target='_blank'
+									rel='noopener'
+									color='inherit'
+									underline='always'
+									className={classes.link}
+								>
+									Garmin Catalyst
+								</Link>{' '}
+								- this device enhances the driver feedback with voice responses
+								that talk you through your performance during the session.
 							</Typography>
 						</Grid>
 					</Grid>
