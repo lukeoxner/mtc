@@ -2,7 +2,6 @@
   "name": "mcpherson-track-center",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lukeoxner.github.io/mtc",
   "dependencies": {
     "@auth0/auth0-react": "^1.6.0",
     "@emotion/react": "^11.4.1",
@@ -22,8 +21,6 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
