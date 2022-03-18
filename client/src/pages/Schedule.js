@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
 		minWidth: 275,
 		maxHeight: '90',
 		marginTop: '70px',
+		marginBottom: '50px',
 		backgroundColor: `rgba(0,0,0,.0)`,
 		color: '#ddd',
 		overflow: 'hidden',

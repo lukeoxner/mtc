@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Schedule from './pages/Schedule';
 import Event from './pages/Event';
+import Multimedia from './pages/Multimedia';
 
 function App() {
 	const [page, setPage] = useState('Home');
@@ -31,6 +32,9 @@ function App() {
 						</Route>
 						<Route exact path='/schedule'>
 							<Schedule />
+						</Route>
+						<Route exact path='/multimedia'>
+							<Multimedia />
 						</Route>
 						<Route exact path='/event'>
 							<Schedule />

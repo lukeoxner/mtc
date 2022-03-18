@@ -141,6 +141,11 @@ export default function PrimarySearchAppBar() {
 					Schedule
 				</Link>
 			</MenuItem>
+			<MenuItem onClick={handleMenuClose}>
+				<Link className={classes.mobileMenuItem} to='/multimedia'>
+					Multimedia
+				</Link>
+			</MenuItem>
 		</Menu>
 	);
 
@@ -177,6 +182,9 @@ export default function PrimarySearchAppBar() {
 						</Link>
 						<Link className={classes.navLink} id='schedule' to='/schedule'>
 							Schedule
+						</Link>
+						<Link className={classes.navLink} id='multimedia' to='/multimedia'>
+							Multimedia
 						</Link>
 					</div>
 					<div className={classes.sectionMobile}>

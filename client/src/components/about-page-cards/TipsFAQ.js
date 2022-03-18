@@ -175,35 +175,3 @@ function TipsFAQ() {
 }
 
 export default TipsFAQ;
-
-{
-	/* <Link
-href='https://winecountrymotorsports.com/product_info.php/products_id/2110'
-target='_blank'
-rel='noopener'
-color='inherit'
-underline='always'
->
-AiM Solo GPS lap timer
-</Link>{' '}
-with RAM mount,{' '}
-<Link
-href='https://gopro.com/en/us/shop/cameras/hero10-black/CHDHX-101-master.html'
-target='_blank'
-rel='noopener'
-color='inherit'
-underline='always'
->
-GoPro camera
-</Link>{' '}
-with{' '}
-<Link
-href='https://gopro.com/en/us/shop/mounts-accessories/suction-cup/AUCMT-302.html'
-target='_blank'
-rel='noopener'
-color='inherit'
-underline='always'
->
-suction mount
-</Link> */
-}
