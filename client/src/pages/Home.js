@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
 			// boxShadow: '0 0 0 0.4rem rgba(0,123,255,.5)',
 		},
 		[theme.breakpoints.down('sm')]: {
-			marginTop: '320px',
+			marginTop: '350px',
 			backgroundColor: 'rgba(0,0,0,0.7)',
 		},
 	},
@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
 		fontStyle: 'italic',
 		fontWeight: '500',
 		[theme.breakpoints.down('sm')]: {
-			fontSize: '2.0rem',
+			fontSize: '1.3rem',
 		},
 	},
 }));

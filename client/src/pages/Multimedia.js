@@ -8,13 +8,10 @@ import {
 	Link,
 	Typography,
 } from '@material-ui/core';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Background from '../images/two-cars-front.jpg';
+import PhotoGalleryCard from '../components/PhotoGalleryCard';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -63,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-function About() {
+function Multimedia() {
 	const classes = useStyles();
 	const theme = useTheme();
 
@@ -84,35 +81,7 @@ function About() {
 							<Typography variant='h4'>Photo Galleries</Typography>
 						</Grid>
 						<Grid className={classes.gridSection} item xs={10} md={3}>
-							<Card sx={{ maxWidth: 400 }}>
-								<CardMedia
-									component='img'
-									height='140'
-									image='https://lh3.googleusercontent.com/SrlEkVKX4SMBQH0oMZeVPvj2SjcMl6nm0U1c0022HQfQWUkvWDjmOKb9uETEuehLEgMlkwmB6YWdBBP0Uck5wO4s8ZWX78UlR6Woe1as5LJBAsNhny7W7Cqp5sxuId3O5zBrNyI9=w917-h611-no'
-									alt='gallery thumbnail'
-								/>
-								<CardContent className={classes.cardContent}>
-									<Typography gutterBottom variant='h5'>
-										March 14, 2022
-									</Typography>
-									<Typography variant='body2' color='text.secondary'>
-										Hallett Motor Racing Circuit
-									</Typography>
-								</CardContent>
-								<CardActions className={classes.cardActions}>
-									<Link
-										href='https://photos.app.goo.gl/LiERhENFWA2HxP6q6'
-										target='_blank'
-										rel='noopener'
-										color='inherit'
-										underline='none'
-									>
-										<Button size='small' variant='outlined'>
-											Learn More
-										</Button>
-									</Link>
-								</CardActions>
-							</Card>
+							<PhotoGalleryCard />
 						</Grid>
 					</Grid>
 				</Container>
@@ -121,4 +90,4 @@ function About() {
 	);
 }
 
-export default About;
+export default Multimedia;
