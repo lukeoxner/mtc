@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
 	Button,
 	makeStyles,
@@ -46,6 +46,10 @@ const useStyles = makeStyles((theme) => ({
 function Event() {
 	const classes = useStyles();
 	const theme = useTheme();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	// Get event id from url
 	let eventId = window.location.pathname.split('/').filter(Boolean).pop();

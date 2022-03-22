@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
 	Button,
 	makeStyles,
@@ -45,6 +45,10 @@ const useStyles = makeStyles((theme) => ({
 function Schedule() {
 	const classes = useStyles();
 	const theme = useTheme();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<>

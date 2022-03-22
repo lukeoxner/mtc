@@ -64,6 +64,10 @@ function Multimedia() {
 	const classes = useStyles();
 	const theme = useTheme();
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<div className={classes.hero}>

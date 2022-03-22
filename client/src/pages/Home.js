@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
 	Button,
 	makeStyles,
@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
 			// boxShadow: '0 0 0 0.4rem rgba(0,123,255,.5)',
 		},
 		[theme.breakpoints.down('sm')]: {
-			marginTop: '350px',
+			marginTop: '320px',
 			backgroundColor: 'rgba(0,0,0,0.7)',
 		},
 	},
@@ -121,6 +121,10 @@ const useStyles = makeStyles((theme) => ({
 function Home() {
 	const classes = useStyles();
 	const theme = useTheme();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<>

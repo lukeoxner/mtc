@@ -83,6 +83,10 @@ function About() {
 
 	const [card, setCard] = useState('introduction');
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [card]);
+
 	const handleCardChange = (newCard) => {
 		setCard(newCard);
 	};
