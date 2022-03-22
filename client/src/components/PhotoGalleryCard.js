@@ -20,6 +20,15 @@ const useStyles = makeStyles((theme) => ({
 	cardActions: {
 		justifyContent: 'center',
 		marginBottom: '20px',
+		[theme.breakpoints.down('sm')]: {
+			marginBottom: '15px',
+		},
+	},
+	image: {
+		height: '160px',
+		[theme.breakpoints.down('sm')]: {
+			height: '130px',
+		},
 	},
 }));
 
@@ -32,7 +41,7 @@ function PhotoGalleryCard() {
 			<Card>
 				<CardMedia
 					component='img'
-					height='160'
+					className={classes.image}
 					image='https://lh3.googleusercontent.com/SrlEkVKX4SMBQH0oMZeVPvj2SjcMl6nm0U1c0022HQfQWUkvWDjmOKb9uETEuehLEgMlkwmB6YWdBBP0Uck5wO4s8ZWX78UlR6Woe1as5LJBAsNhny7W7Cqp5sxuId3O5zBrNyI9=w917-h611-no'
 					alt='gallery thumbnail'
 				/>

@@ -62,6 +62,13 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: '20px',
 		textAlign: 'center',
 	},
+	video: {
+		width: '100%',
+		height: '300px',
+		[theme.breakpoints.down('sm')]: {
+			height: '200px',
+		},
+	},
 }));
 
 function Multimedia() {
@@ -74,9 +81,7 @@ function Multimedia() {
 
 	return (
 		<>
-			<div className={classes.hero}>
-				{/* <Typography className={classes.heroText}>About Us</Typography> */}
-			</div>
+			<div className={classes.hero}></div>
 			<div className={classes.root}>
 				<Container className={classes.mainDiv}>
 					<Grid
@@ -106,8 +111,7 @@ function Multimedia() {
 								</Grid>
 								<Grid className={classes.gridSubSection} item xs={10}>
 									<iframe
-										width='100%'
-										height='250px'
+										className={classes.video}
 										src='https://www.youtube.com/embed/xY-lUGSWrUc'
 										title='YouTube video player'
 										frameborder='0'
