@@ -18,18 +18,14 @@ const useStyles = makeStyles((theme) => ({
 		position: 'relative',
 		backgroundColor: '#fff',
 		width: '100',
-		height: '100vh',
+		// height: '100vh',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
 		backgroundPosition: 'center center',
 		backgroundAttachment: 'fixed',
 		overflow: 'hidden',
 	},
-	mainDiv: {
-		// minWidth: 275,
-		// marginTop: '20px',
-		// overflow: 'hidden',
-	},
+	mainDiv: {},
 	hero: {
 		marginTop: '50px',
 		height: '250px',
@@ -43,20 +39,28 @@ const useStyles = makeStyles((theme) => ({
 			height: '100px',
 		},
 	},
+	heading: {
+		fontWeight: 500,
+	},
 	gridContainer: {
 		marginBottom: '50px',
-		marginTop: '30px',
+		marginTop: '20px',
+		[theme.breakpoints.down('sm')]: {
+			marginTop: '0px',
+		},
 	},
 	gridSection: {
 		color: '#444',
 		marginTop: '20px',
-	},
-	cardContent: {
 		textAlign: 'center',
+		[theme.breakpoints.down('sm')]: {
+			marginBottom: '30px',
+		},
 	},
-	cardActions: {
-		justifyContent: 'center',
-		marginBottom: '20px',
+	gridSubSection: {
+		color: '#444',
+		marginTop: '20px',
+		textAlign: 'center',
 	},
 }));
 
@@ -81,11 +85,37 @@ function Multimedia() {
 						justifyContent='center'
 						className={classes.gridContainer}
 					>
-						<Grid className={classes.gridSection} item xs={10}>
-							<Typography variant='h4'>Photo Galleries</Typography>
+						<Grid className={classes.gridSection} item xs={12} md={6}>
+							<Grid container justifyContent='center'>
+								<Grid item xs={10}>
+									<Typography variant='h4' className={classes.heading}>
+										Photos
+									</Typography>
+								</Grid>
+								<Grid className={classes.gridSubSection} item xs={10} md={8}>
+									<PhotoGalleryCard />
+								</Grid>
+							</Grid>
 						</Grid>
-						<Grid className={classes.gridSection} item xs={10} md={3}>
-							<PhotoGalleryCard />
+						<Grid className={classes.gridSection} item xs={12} md={6}>
+							<Grid container justifyContent='center'>
+								<Grid item xs={10}>
+									<Typography variant='h4' className={classes.heading}>
+										Videos
+									</Typography>
+								</Grid>
+								<Grid className={classes.gridSubSection} item xs={10}>
+									<iframe
+										width='100%'
+										height='250px'
+										src='https://www.youtube.com/embed/xY-lUGSWrUc'
+										title='YouTube video player'
+										frameborder='0'
+										allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+										allowfullscreen
+									></iframe>
+								</Grid>
+							</Grid>
 						</Grid>
 					</Grid>
 				</Container>

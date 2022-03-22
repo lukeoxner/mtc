@@ -29,10 +29,10 @@ function PhotoGalleryCard() {
 
 	return (
 		<>
-			<Card sx={{ maxWidth: 400 }}>
+			<Card>
 				<CardMedia
 					component='img'
-					height='140'
+					height='160'
 					image='https://lh3.googleusercontent.com/SrlEkVKX4SMBQH0oMZeVPvj2SjcMl6nm0U1c0022HQfQWUkvWDjmOKb9uETEuehLEgMlkwmB6YWdBBP0Uck5wO4s8ZWX78UlR6Woe1as5LJBAsNhny7W7Cqp5sxuId3O5zBrNyI9=w917-h611-no'
 					alt='gallery thumbnail'
 				/>

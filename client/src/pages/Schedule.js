@@ -55,7 +55,7 @@ function Schedule() {
 			<div className={classes.mainDiv}>
 				<Container className={classes.root}>
 					<Typography variant='h3' className={classes.hero}>
-						Event Schedule - 2022
+						Event Schedule
 					</Typography>
 					<Grid
 						container
