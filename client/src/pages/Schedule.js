@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 		position: 'relative',
 		backgroundImage: `linear-gradient(to left, rgba(000, 000, 000, 0.8), rgba(000, 000, 000, 0.80)), url(${Background})`,
 		width: '100',
-		// height: '100vh',
+		height: '100',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
 		backgroundPosition: 'center center',
@@ -32,6 +32,11 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: `rgba(0,0,0,.0)`,
 		color: '#ddd',
 		overflow: 'hidden',
+	},
+	scheduleBlock: {
+		[theme.breakpoints.up('lg')]: {
+			marginBottom: '300px',
+		},
 	},
 	hero: {
 		textAlign: 'center',
@@ -58,6 +63,7 @@ function Schedule() {
 						Event Schedule
 					</Typography>
 					<Grid
+						className={classes.scheduleBlock}
 						container
 						direction='row'
 						justifyContent='center'
@@ -87,14 +93,3 @@ function Schedule() {
 }
 
 export default Schedule;
-
-// {/* <Details
-// 								id={result.id}
-// 								key={result.id}
-// 								name={result.name}
-// 								street={result.street}
-// 								city={result.city}
-// 								state={result.state}
-// 								website={result.website_url}
-// 								type={result.brewery_type}
-// 							/> */}
